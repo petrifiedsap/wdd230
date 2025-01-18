@@ -1,6 +1,5 @@
-/*colors yellow f6efa6, blue 00a5cf, pinkish f0d2d1, dk brown 5e3023, md brown 895737 */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*colors yellow f6efa6, blue 00a5cf, pinkish f0d2d1, dk brown 5e3023, md brown 895737 */
 
 body {
     margin: 0;
@@ -13,17 +12,20 @@ h1, h2, h3 {
 
 header {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
     background-color: #5e3023;
     color: #f6efa6;
     padding: 2em;
 }
 header img {
-    grid-column: 2/3;
+    grid-column: 1/2;
     height: 6em;
+    justify-self: right;
+    padding-right: 1em;
 }
 header h1 {
-    grid-column: 3/4;
+    grid-column: 2/3;
+    padding-left: 1em;
 }
 
 nav {

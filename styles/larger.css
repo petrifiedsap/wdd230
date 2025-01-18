@@ -1,0 +1,14 @@
+@media screen and (min-width: 650px) {
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    main div {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+    .info {
+        padding: 3.75em;
+    }
+    
+}
