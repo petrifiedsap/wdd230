@@ -113,16 +113,16 @@
    * Add the correct font size in all browsers.
    */
   
-  small {
+  /*small {
     font-size: 80%;
-  }
+  }*/
   
   /**
    * Prevent `sub` and `sup` elements from affecting the line height in
    * all browsers.
    */
   
-  sub,
+  /*sub,
   sup {
     font-size: 75%;
     line-height: 0;
@@ -136,7 +136,7 @@
   
   sup {
     top: -0.5em;
-  }
+  }*/
   
   /* Embedded content
      ========================================================================== */
