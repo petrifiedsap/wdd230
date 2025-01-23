@@ -1,7 +1,11 @@
 @media screen and (min-width: 650px) {
-    nav {
-        display: flex;
-        justify-content: space-evenly;
+    .navigation {
+        flex-direction: row;
+        margin: 0;
+    }
+    .navigation a {
+        display: block;
+
     }
     main div {
         display: grid;
@@ -10,5 +14,15 @@
     .info {
         padding: 3.75em;
     }
-    
+    header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    }
+    header h1::after {
+        content: "   🏔";
+    }
+    /* hide hamburger button*/
+    #menu {
+        display: none;
+    }
 }

@@ -8,15 +8,18 @@ h1, h2, h3 {
 }
 /*colors yellow f6efa6, blue 00a5cf, pinkish f0d2d1, dk brown 5e3023, md brown 895737 */
 
+
+
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     background-color: #5e3023;
     color: #f6efa6;
     padding: 2em;
 }
 header img {
     grid-column: 1/2;
+    grid-row: 1/2;
     height: 6em;
     justify-self: right;
     padding-right: 1em;
@@ -25,17 +28,69 @@ header h1 {
     grid-column: 2/3;
     padding-left: 1em;
 }
+header h1::after {
+    content: "   〽";
+}
+
+/* code for hamburger menu */
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #f6efa6;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: left;
+}
+/* this is the button!! */
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+    padding-inline-start: 0;
+	background-color: #f6efa6;
+	color: #5e3023;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #5e3023;
+}
+.navigation a:hover {
+	background-color: #5e3023;
+	color: #f6efa6;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+/* end of hamburger css*/
 
 nav {
     background-color: #f6efa6;
 }
 nav a {
-    display: block;
     color: #5e3023;
     text-align: center;
     text-decoration: none;
     font-size: 1.25em;
-    padding: .5em;
 }
 
 main {
@@ -74,6 +129,13 @@ main hr {
     padding: 2em;
 }
 
+iframe {
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
 footer {
     background-color: #5e3023;
     color: #f6efa6;
@@ -86,3 +148,5 @@ footer p {
 #lastmodified {
     color: #f6efa6;
 }
+
+
