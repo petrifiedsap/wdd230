@@ -18,9 +18,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;    
     }
-    header h1::after {
-        content: "   🏔";
-    }
+
     /* hide hamburger button*/
     #menu {
         display: none;

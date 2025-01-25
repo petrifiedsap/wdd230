@@ -8,8 +8,6 @@ h1, h2, h3 {
 }
 /*colors yellow f6efa6, blue 00a5cf, pinkish f0d2d1, dk brown 5e3023, md brown 895737 */
 
-
-
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -22,14 +20,11 @@ header img {
     grid-row: 1/2;
     height: 6em;
     justify-self: right;
-    padding-right: 1em;
+    padding-right: 2rem;
 }
 header h1 {
     grid-column: 2/3;
     padding-left: 1em;
-}
-header h1::after {
-    content: "   〽";
 }
 
 /* code for hamburger menu */
@@ -100,6 +95,9 @@ main {
 main h2 {
     text-align: center;
     color: #5e3023;
+}
+main h2::before {
+    content: "🌎    ";
 }
 main hr {
     width: 90%;
