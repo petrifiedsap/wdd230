@@ -21,7 +21,11 @@ header {
     color: white;
     padding: 1rem 0;
 }
+#header-logo {
+    display: none;
+}
 .short-list {
+    justify-self: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -73,7 +77,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-/* do more stuling on this button*/
+/* do more styling on this button*/
 
 #hero .join {
     grid-column: 2/3;
@@ -102,6 +106,8 @@ main img {
     background-color: var(--bg-dark);
     padding-bottom: 5rem;
     border: 5px solid var(--darkest);
+    display: grid;
+    grid-template-columns: 1fr;
 }
 #events h2 {
     text-align: center;
@@ -116,6 +122,12 @@ main img {
     padding: 2rem 0;
     border: 2px solid var(--darkest);
     border-radius: 10px;
+}
+.event-card:nth-of-type(2) {
+    display: none;
+}
+.event-card:nth-of-type(3) {
+    display: none;
 }
 .event-card img {
     width: 75%;
@@ -133,6 +145,8 @@ main img {
 /*members and spotlight section*/
 #membership {
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 #membership img {
     width: 75%;
@@ -209,8 +223,4 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
-}
-footer .short-list {
-    grid-column: 2/3;
-    grid-row: 1/3;
 }
