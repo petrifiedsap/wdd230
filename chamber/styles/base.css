@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    font-family: thasadith, quicksand, sans-serif;
+}
+
+:root {
+    --darkest: #020122;
+    --bg-dark: #488286;
+    --bg-light: #bdd9db;
+    --accent-color: #cfd2b2;  
+}
+
+h1, h3 {
+    font-family: quicksand, thasadith, sans-serif;
+    text-align: center;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    background-color: var(--darkest);
+    color: white;
+    padding: 1rem 0;
+}
+.short-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* code for hamburger menu */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+}
+/* this is the button!! */
+#menu::before {
+	content: "☰";
+}
+#menu.open::before {
+	content: "X";
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+    padding-inline-start: 0;
+	background-color: var(--bg-dark);
+	color: var(--darkest);
+}
+.navigation a {
+	display: none;
+	padding: .5rem;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+.navigation a:hover {
+	background-color: var(--bg-light);
+	color: var(--darkest);
+	font-weight: 700;
+}
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+/* end of hamburger css*/
+/*hero box*/
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+/* do more stuling on this button*/
+
+#hero .join {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 5rem;
+    height: 2rem;
+    justify-self: center;
+    align-self: center;
+}
+main img {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    width: 100%;
+}
+/* mission statement section*/
+#mission {
+    text-align: center;
+    padding: 2rem;
+}
+#mission p {
+    padding: 1rem;
+}
+
+/* current events section*/
+#events {
+    background-color: var(--bg-dark);
+    padding-bottom: 5rem;
+    border: 5px solid var(--darkest);
+}
+#events h2 {
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    color: white;
+}
+.event-card {
+    background-color: var(--bg-light);
+    width: 75%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    border: 2px solid var(--darkest);
+    border-radius: 10px;
+}
+.event-card img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid var(--darkest);
+}
+.event-card h3 {
+    padding: 1rem 0;
+}
+.event-card p {
+    text-align: center;
+}
+
+/*members and spotlight section*/
+#membership {
+    margin-top: 2rem;
+}
+#membership img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+#membership h3 {
+    padding: 2rem;
+}
+#membership p {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+#spotlight {
+    border: 5px solid var(--darkest);
+    margin: 0;
+}
+/*section with logo cloud*/
+#logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    background-color: var(--accent-color);
+}
+.logo {
+    width: 100%;
+    padding: .5rem;
+    justify-self: center;
+}
+#logos p {
+    grid-column: 3/6;
+}
+img.logo:nth-of-type(1) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+img.logo:nth-of-type(2) {
+    grid-column: 4/5; 
+    grid-row: 2/3;
+}
+img.logo:nth-of-type(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+img.logo:nth-of-type(4) {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+img.logo:nth-of-type(5) {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+img.logo:nth-of-type(6) {
+    grid-column: 5/6;
+    grid-row: 4/5;
+}
+img.logo:nth-of-type(7) {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+ /* weather section*/
+#weather {
+    background-color: var(--bg-dark);
+    padding: 3rem;
+}
+
+/* footer section */
+footer {
+    background-color: var(--darkest);
+    color: white;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer .short-list {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
