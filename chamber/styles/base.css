@@ -30,6 +30,10 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
 }
+.short-list a {
+    color: white;
+    text-decoration: none;
+}
 
 /* code for hamburger menu */
 #menu {
