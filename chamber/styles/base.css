@@ -117,7 +117,7 @@ main img {
     text-align: center;
     padding: 2rem;
     font-weight: bold;
-    color: white;
+    color: var(--darkest);
 }
 .event-card {
     background-color: var(--bg-light);
