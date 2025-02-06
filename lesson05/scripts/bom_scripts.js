@@ -2,7 +2,7 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-button.addEventListener('click', function() {
+function faveScripture() {
     if (input.value != '') {
         const li = document.createElement('li');
         const deleteButton = document.createElement('button');
@@ -22,5 +22,14 @@ button.addEventListener('click', function() {
         input.value = '';
     } else {
         input.focus();
+    }
+};
+
+
+button.addEventListener('click', faveScripture);
+
+input.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        faveScripture();
     }
 });
