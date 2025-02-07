@@ -21,12 +21,22 @@
     <header>
         <img id="header-logo" src="images/chamber-logo.png" alt="Logo for Mineola Chamber of Commerce">
         <button id="menu" title="menu button"></button>
-        <h1>Mineola Chamber of Commerce</h1>
+        <h1>Welcome to <br>The Mineola Chamber of Commerce</h1>
         <div class="short-list">
-            <a href="https://www.facebook.com/">FB</a>
-            <a href="https://www.linkedin.com/">in</a>
-            <a href="https://x.com/">X</a>
+            <a href="https://www.facebook.com/">
+                <img src="images/Facebook_Logo_Primary.png" alt="Facebook logo">
+            </a>
+            <a href="https://www.linkedin.com/">
+                <img src="images/In-Blue-128@2x.png" alt="Linked In Logo">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/x-logo-white.png" alt="X logo">
+            </a>
         </div>
+        <label class="switch">
+            <input type="checkbox" id="myCheck" onclick="darkMode()">
+            <span class="slider round"></span>
+        </label>
     </header>
     <nav>
         <ul class="navigation">
@@ -89,11 +99,14 @@
         </section>
     </main>
     <footer>
-        <p>&copy; Amber Boyd 2025</p>
-        <p>Chamber of Commerce Home Page Build <br> WDD 230 BYUI</p>
+        <p>&copy; 2025 Amber Boyd</p>
+        <p>Chamber of Commerce Home Page Build</p>
+        <p>WDD 230 BYUI</p>
         <a href="#">Contact Us</a>
-        <p id="lastmodified"> here
-        </p>
+        <span class="modified">
+            <p>Site Last Modified:</p>
+            <p id="lastmodified"></p>
+        </span>
     </footer>
     <script src="scripts/scripts.js"></script>
 </body>

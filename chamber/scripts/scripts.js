@@ -8,3 +8,25 @@ hamButton.addEventListener('click', () => {
 });
 
 document.getElementById('lastmodified').innerHTML = document.lastModified;
+
+//for dark mode toggle
+function darkMode() {
+
+	const checkBox = document.querySelector("#myCheck");
+	const main = document.querySelector("main");
+	const logoArea = document.querySelector("#logos");
+	const darkest = window.getComputedStyle(document.body).getPropertyValue('--darkest');
+	const accent = window.getComputedStyle(document.body).getPropertyValue('--accent-color');
+
+	if (checkBox.checked == true) {
+		main.style.background = darkest;
+		main.style.color = "#fff";
+		logoArea.style.background = darkest;
+	} else {
+		main.style.background = "#ffffff";
+		main.style.color = "#000";
+		logoArea.style.background = accent;
+
+
+	}
+};
