@@ -26,7 +26,5 @@ function darkMode() {
 		main.style.background = "#ffffff";
 		main.style.color = "#000";
 		logoArea.style.background = accent;
-
-
 	}
 };
