@@ -15,6 +15,9 @@ function darkMode() {
 	const checkBox = document.querySelector("#myCheck");
 	const main = document.querySelector("main");
 	const logoArea = document.querySelector("#logos");
+	const eventCard = document.querySelector(".event-card");
+	const weatherText = document.querySelector("#weather");
+
 	const darkest = window.getComputedStyle(document.body).getPropertyValue('--darkest');
 	const accent = window.getComputedStyle(document.body).getPropertyValue('--accent-color');
 
@@ -22,6 +25,8 @@ function darkMode() {
 		main.style.background = darkest;
 		main.style.color = "#fff";
 		logoArea.style.background = darkest;
+		eventCard.style.color = darkest;
+		weatherText.style.color = darkest;
 	} else {
 		main.style.background = "#ffffff";
 		main.style.color = "#000";
