@@ -7,10 +7,11 @@
         display: block;
 
     }
-    main div {
+    .main_grid {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
     }
+    
     .info {
         padding: 3.75em;
     }
@@ -24,3 +25,18 @@
         display: none;
     }
 }
+@media screen and (min-width: 500px) {
+    .herolabel {
+        top: .5rem;
+        left: auto;
+        right: 3.5rem;
+    }
+    .herolabel p {
+        margin: 0;
+        padding: 1rem;
+        font-weight: 800;
+        font-size: clamp(.25rem , 3vw, 1.5rem);
+    }
+}
+
+

@@ -14,14 +14,14 @@
     <meta property="og:title" content="Amber Boyd - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Amber Boyd home page for WDD 230 - Web Frontend Development, contains course assignment portal">
-    <meta property="og:image" content="https://petrifiedsap.github.io/wdd230/images/plano-compress.jpg">
+    <meta property="og:image" content="https://petrifiedsap.github.io/wdd230/images/plano-compress.webp">
     <meta property="og:url" content="https://petrifiedsap.github.io/wdd230/">
-    <meta name="twitter:card" content="https://petrifiedsap.github.io/wdd230/images/plano-compress.jpg">
+    <meta name="twitter:card" content="https://petrifiedsap.github.io/wdd230/images/plano-compress.webp">
 </head>
 <body>
     <header>
         <button id="menu" title="menu button"></button>
-        <img src="images/profilecloser.jpg" alt="picture of Amber Boyd">
+        <img src="images/profilecloser.webp" alt="picture of Amber Boyd">
         <h1>Amber Boyd</h1>
         
     </header>
@@ -36,10 +36,20 @@
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/78?lang=eng#p17" target="_blank">Scripture</a></li>
         </ul>
     </nav>
+    
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero_profile.webp" media="(max-width: 500px)">
+                <img src="images/hero-medium.webp" alt="picture of the Provo Temple" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <p>Provo Utah Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
-        <div>
+        <div class="main_grid">
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
@@ -58,7 +68,7 @@
                 </li>
                 <li>
                     <p>03:
-                    <a href="images/combexercise.PNG">Combinator Exercise</a>
+                    <a href="images/combexercise.webp">Combinator Exercise</a>
                     <a href="https://codepen.io/petrifiedsap/pen/QwLJwpG">Pseudo Elements</a>
                     <a href="https://codepen.io/petrifiedsap/pen/wBwQBqG">Hamburger Menu</a>
                     </p>
@@ -79,7 +89,9 @@
                     </p>
                 </li>
                 <li>
-                    <p>07:</p>
+                    <p>07:
+                        <a href="lesson06/responsive-images.html">Responsive Images</a>
+                    </p>
                 </li>
                 <li>
                     <p>08:</p>

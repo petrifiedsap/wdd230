@@ -92,6 +92,29 @@ main {
     max-width: 1000px;
     margin: auto;
 }
+
+.hero{
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute;
+    top: 4rem;
+    left: 2rem; 
+}
+.herolabel p {
+    margin: 0;
+    padding: 1rem;
+    font-weight: 800;
+    font-size: clamp(.5rem , 5vw, 1.5rem);
+}
+
 main h2 {
     text-align: center;
     color: #5e3023;
