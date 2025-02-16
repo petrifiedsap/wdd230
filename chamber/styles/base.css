@@ -237,9 +237,10 @@ main img {
 
 /*members and spotlight section*/
 #membership {
-    margin-top: 2rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
+    background-color: var(--accent-color);
 }
 #membership img {
     width: 75%;
@@ -256,6 +257,7 @@ main img {
 #spotlight {
     border: 5px solid var(--darkest);
     margin: 0;
+    background-color: white;
 }
 /*section with logo cloud*/
 #logos {

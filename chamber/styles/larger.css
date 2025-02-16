@@ -1,5 +1,7 @@
 @media screen and (min-width: 1000px) {
-    
+    .short-list img {
+        max-width: 1.75rem;
+    }
     .event-card:nth-of-type(3) {
         display: block;
     }
