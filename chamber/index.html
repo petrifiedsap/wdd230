@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <img id="header-logo" src="images/chamber-logo.png" alt="Logo for Mineola Chamber of Commerce">
+        <img id="header-logo" src="images/chamber-logo.webp" alt="Logo for Mineola Chamber of Commerce">
         <button id="menu" title="menu button"></button>
         <h1>Welcome to <br>The Mineola Chamber of Commerce</h1>
         <div class="short-list">
@@ -30,7 +30,7 @@
                 <img src="images/In-Blue-128@2x.png" alt="Linked In Logo">
             </a>
             <a href="https://x.com/">
-                <img src="images/x-logo-white.png" alt="X logo">
+                <img src="images/x-logo-white.webp" alt="X logo">
             </a>
         </div>
         <label class="switch" title="dark mode switch">
@@ -47,14 +47,21 @@
         </ul>
     </nav>
     <main>
-        <div id="hero">
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small-w06.webp" media="(max-width: 650px)">
+                <source srcset="images/hero-med-w06.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large-w06.webp" alt="picture of a woman signing a contract in an office" width="1500" height="750">
+            </picture>
+        </div>
+        <!--<div id="hero">
 
-            <img src="images/main-street.jpg" alt="Large picture of Mineola Texas">
+            <img src="images/main-street.webp" alt="Large picture of Mineola Texas">
             <button class="join" title="join button">Join!</button>
 
-        </div>
+        </div>-->
         <section id="mission">
-            <h3>Mission statement</h3>
+            <h2>Mission statement</h2>
             <p>Mission statement and goals for chamber ofcommerce.</p>
             <button class="join" title="join button">Membership Levels</button>
         </section>
@@ -79,7 +86,7 @@
         </div>
         <div id="membership">
             <section id="spotlight">
-                <img src="images/chamber-logo.png" alt="">
+                <img src="images/chamber-logo.webp" alt="">
                 <h3>Member/sponsor Spotlight!</h3>
                 <p>Info about why they are so great!  And all the things they've done for our town!</p>
             </section>
@@ -94,9 +101,30 @@
                 <img class="logo" src="images/train.png" alt="trainish">
             </div>
         </div>
-        <section id="weather">
-            <h3>Weather here in Mineola</h3>
-        </section>
+        <div id="weather">
+            <h2>Weather here in Mineola</h2>
+            <section>
+                <h3>Temperature</h3>
+                <div class="weather-flex">
+                    <p id="temp">44</p>
+                    <p>℉</p>
+                </div>                
+            </section>
+            <section>
+                <h3>Windspeed</h3>
+                <div class="weather-flex">
+                    <p id="wind">22</p>
+                    <p>mph</p>
+                </div>
+            </section>
+            <section>
+                <h3>Wind Chill Factor</h3>
+                <div class="weather-flex">
+                    <p id="windchill"></p>
+                    <p>℉</p>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Amber Boyd</p>
@@ -109,5 +137,6 @@
         </div>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

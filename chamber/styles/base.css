@@ -5,12 +5,12 @@
 
 :root {
     --darkest: #020122;
-    --bg-dark: #488286;
+    --bg-dark: #76a6aa;
     --bg-light: #bdd9db;
     --accent-color: #cfd2b2;  
 }
 
-h1, h3 {
+h1, h2, h3 {
     font-family: quicksand, thasadith, sans-serif;
     text-align: center;
 }
@@ -147,13 +147,19 @@ header {
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
 /*hero box*/
+/* taken out for week 06 assignment
 #hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-/* do more styling on this button*/
+/* do more styling on this button*//*
 #hero .join {
     grid-column: 2/3;
     grid-row: 3/4;
@@ -161,7 +167,7 @@ header {
     height: 3rem;
     border: .25rem solid var(--darkest);
 
-}
+}*/
 .join {
     justify-self: center;
     align-self: center;
@@ -294,9 +300,22 @@ img.logo:nth-of-type(7) {
     grid-row: 5/6;
 }
  /* weather section*/
-#weather {
+ #weather {
+    display: flex;
+    flex-direction: column;
     background-color: var(--bg-dark);
     padding: 3rem;
+}
+#weather h2 {
+    padding-bottom: 2rem;
+}
+.weather-flex {
+    display: flex;
+    justify-self: center;
+}
+#temp, #wind, #windchill {
+    text-align: right;
+    padding-right: 1rem;
 }
 
 /* footer section */
