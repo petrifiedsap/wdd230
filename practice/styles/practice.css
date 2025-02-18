@@ -1,0 +1,53 @@
+/* same weight Type column 0-0-1 */
+
+main h3 {
+    color: green;
+}
+h3 {
+    color: red;
+}
+
+main h3::first-letter {
+    color: blue;
+}
+h3::first-letter {
+    color: aliceblue;
+}
+
+/* Class column 0-1-0*/
+main .statement {
+    color: purple;
+}
+.river.river {
+    color: red;
+}
+
+h3:hover {
+    color: blue;
+}
+
+h3[lang="en-us"] {
+    color: aquamarine;
+}
+
+/* ID Column 1-0-0*/
+#text {
+    color: red;
+}
+
+.myclass #text {
+    color: brown;
+}
+
+#myid #text {
+    color: yellow;
+}
+#text#text {
+    color: blueviolet;
+}
+
+div[id = "text"] {
+    color: red;
+}
+
+
