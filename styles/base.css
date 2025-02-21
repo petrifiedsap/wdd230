@@ -118,7 +118,7 @@ main {
     left: 2rem;
 }
 
-.herolabel p {
+.herolabel .was_p {
     margin: 0;
     padding: 1rem;
     font-weight: 800;
@@ -130,7 +130,7 @@ main h2 {
     color: #5e3023;
 }
 
-main h2::before {
+.page-title::before {
     content: "🌎    ";
 }
 
