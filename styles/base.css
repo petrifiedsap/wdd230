@@ -130,7 +130,7 @@ main h2 {
     color: #5e3023;
 }
 
-.page-title::before {
+ main .page-title::before {
     content: "🌎    ";
 }
 
