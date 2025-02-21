@@ -3,9 +3,13 @@ body {
     padding: 0;
     font-family: Montserrat, "open sans", sans-serif;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-family: "open sans", Montserrat, sans-serif;
 }
+
 /*colors yellow f6efa6, blue 00a5cf, pinkish f0d2d1, dk brown 5e3023, md brown 895737 */
 
 header {
@@ -15,6 +19,7 @@ header {
     color: #f6efa6;
     padding: 2em;
 }
+
 header img {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -22,6 +27,7 @@ header img {
     justify-self: right;
     padding-right: 2rem;
 }
+
 header h1 {
     grid-column: 2/3;
     padding-left: 1em;
@@ -31,49 +37,51 @@ header h1 {
 
 /* small view navigation */
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #f6efa6;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #f6efa6;
     grid-column: 1/2;
     grid-row: 1/2;
     justify-self: left;
 }
+
 /* this is the button!! */
 #menu::before {
-	content: "☰";
+    content: "☰";
 }
 
 #menu.open::before {
-	content: "X";
+    content: "X";
 }
 
 .navigation {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
     padding-inline-start: 0;
-	background-color: #f6efa6;
-	color: #5e3023;
+    background-color: #f6efa6;
+    color: #5e3023;
 }
 
 .navigation a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #5e3023;
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #5e3023;
 }
+
 .navigation a:hover {
-	background-color: #5e3023;
-	color: #f6efa6;
-	font-weight: 700;
+    background-color: #5e3023;
+    color: #f6efa6;
+    font-weight: 700;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
-	display: block;
+    display: block;
 }
 
 /* end of hamburger css*/
@@ -81,6 +89,7 @@ header h1 {
 nav {
     background-color: #f6efa6;
 }
+
 nav a {
     color: #5e3023;
     text-align: center;
@@ -93,7 +102,7 @@ main {
     margin: auto;
 }
 
-.hero{
+.hero {
     position: relative;
 }
 
@@ -106,22 +115,25 @@ main {
 .herolabel {
     position: absolute;
     top: 4rem;
-    left: 2rem; 
+    left: 2rem;
 }
+
 .herolabel p {
     margin: 0;
     padding: 1rem;
     font-weight: 800;
-    font-size: clamp(.5rem , 5vw, 1.5rem);
+    font-size: clamp(.5rem, 5vw, 1.5rem);
 }
 
 main h2 {
     text-align: center;
     color: #5e3023;
 }
+
 main h2::before {
     content: "🌎    ";
 }
+
 main hr {
     width: 90%;
     color: #5e3023;
@@ -133,6 +145,7 @@ main hr {
     border: 1px solid #5e3023;
     margin: 2em;
 }
+
 .card h3 {
     text-align: center;
     color: #f6efa6;
@@ -140,13 +153,15 @@ main hr {
     padding: 1em;
     margin: 0;
 }
+.card a {
+    text-decoration: none;
+}
 .card ul {
     list-style-type: none;
 }
-
 .info {
+    font-family: Montserrat, "open sans", sans-serif;
     text-align: center;
-    text-decoration: none;
     padding: 2em;
 }
 
@@ -162,12 +177,12 @@ footer {
     color: #f6efa6;
     padding: 2em;
 }
+
 footer p {
     font-size: 1.25em;
-    text-align: center;    
+    text-align: center;
 }
+
 #lastmodified {
     color: #f6efa6;
 }
-
-
