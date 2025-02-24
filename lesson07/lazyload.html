@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading</title>
+    <meta name="description" content="A place to use Lazy Loading">
+    <meta name="author" content="Amber Boyd">
+    <link rel="icon" href="../favicon.ico">
+    <meta property="og:title" content="Amber Boyd - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Amber Boyd home page for WDD 230 - Web Frontend Development, contains course assignment portal">
+    <meta property="og:image" content="https://petrifiedsap.github.io/wdd230/images/plano-compress.webp">
+    <meta property="og:url" content="https://petrifiedsap.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading All Day Long</h1>
+        <hr>
+    </header>
+    <main class="main-flex">
+        <div class="container">
+            <img src="images/Christmas_PJs_2024_sized.webp" alt="Boyd family in our 2024 Christmas pajamas" loading="lazy" width="400" height="611">
+            <div class="overlay"></div>
+        </div>
+        <div class="container">
+            <img src="images/Cody_at_soccer_game_sized.webp" alt="Cody at the soccer game in Poland" loading="lazy" width="400" height="686">
+            <div class="overlay"></div>
+        </div>
+        <div class="container">
+            <img src="images/AJ_and_Sarah_temple_sized.webp" alt="AJ and Sarah outside the Dallas temple" loading="lazy" width="400" height="762">
+            <div class="overlay"></div>
+        </div>
+        <div class="container">
+            <img src="images/Mary_and_Kathy_grad_sized.webp" alt="Mary and Kathy at their graduation in 2024" loading="lazy" width="400" height="634">
+            <div class="overlay"></div>
+        </div>
+        <div class="container">    
+            <img src="images/D_and_Sam_forest_sized.webp" alt="Danny and sammy on the ice cave hike in Colorado 2024" loading="lazy" width="400" height="702">
+            <div class="overlay"></div>
+        </div>
+        <div class="container">
+            <img src="images/Lucy_and_Hannah_sized.webp" alt="Lucy and Hannah in the van during a road trip" loading="lazy" width="400" height="609">
+            <div class="overlay"></div>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <p id="current-year" class="cyear"></p>
+        <p>Amber Boyd</p>
+        <p>Texas, USA</p>
+        <p id="lastmodified"> here
+        </p>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>
+
