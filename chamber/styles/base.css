@@ -14,6 +14,7 @@ h1, h2, h3 {
     font-family: quicksand, thasadith, sans-serif;
     text-align: center;
 }
+/* styling for the header, applies to all pages*/
 header {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -25,6 +26,7 @@ header {
 #header-logo {
     display: none;
 }
+/*this is the social media icons*/
 .short-list {
     justify-self: center;
     display: flex;
@@ -38,12 +40,7 @@ header {
 .short-list img {
     max-width: 1rem;
 }
-.switch {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    justify-self: right;
-    margin-right: 1.5rem;
-}
+
 /* code for hamburger menu */
 #menu {
 	font-size: 1.5rem;
@@ -84,13 +81,19 @@ header {
 	display: block;
 }
 /* end of hamburger css*/
+
 /*this is for the dark mode switch*/
 /* The switch - the box around the slider */
+/* the dark mode switch */
 .switch {
     position: relative;
     display: inline-block;
     width: 2rem;
     height: 1rem;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    justify-self: right;
+    margin-right: 1.5rem;
   }
   
   /* Hide default HTML checkbox */
@@ -147,6 +150,7 @@ header {
   .slider.round:before {
     border-radius: 50%;
   }
+/* here starts the code for main*/
 
   .hero img {
     width: 100%;
@@ -176,11 +180,12 @@ header {
     font-weight: 700;
     border-radius: 5px;
 }
-main img {
+.index-main img {
     grid-column: 1/4;
     grid-row: 1/4;
     width: 100%;
 }
+
 /* mission statement section*/
 #mission {
     text-align: center;
@@ -345,4 +350,41 @@ footer p:nth-of-type(3) {
 footer .modified {
     grid-column: 2/3;
     grid-row: 2/4;
+}
+
+/* This is the code for the main section on the discover page*/
+.discover-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 2rem;
+    margin: 0 auto;
+}
+.discover-main h1 {
+    grid-column: 1/2;
+} 
+.welcome {
+    padding: 2rem;
+    background-color: var(--darkest);
+    color: white;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar {
+    padding-top: 2rem;
+    width: 100%;
+}
+.information iframe {
+    width: 100%;
+}
+.info {
+    font-weight: 800;
+    font-family: thasadith, quicksand, sans-serif;
+    padding: 2rem;
+}
+.map iframe {
+    border: 0;
 }

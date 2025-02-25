@@ -33,3 +33,41 @@ function darkMode() {
 		logoArea.style.background = accent;
 	}
 };
+
+// math to find difference in dates
+document.addEventListener('DOMContentLoaded', function() {
+	// milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
+	const msToDays = 86400000;
+
+	// initialize display elements
+	const firstLine = document.querySelector(".label_first");
+	const secondLine = document.querySelector(".label_second");
+
+	let lastVisit = JSON.parse(localStorage.getItem("lastTime")) || 0;
+	localStorage.setItem("lastTime", JSON.stringify(Date.now()));
+	
+	if (lastVisit != '') {
+		const today = Date.now();
+		let timeLapse = (Date.now() - lastVisit) / msToDays; 
+		if (timeLapse < 1) {
+			firstLine.innerHTML = '';
+			secondLine.innerHTML = 'Back so soon! Awesome!';
+		} else {
+			firstLine.innerHTML = 'We missed you!'
+			secondLine.innerHTML = 'You last visited' + Math.trunc(timeLapse) + 'days ago.';
+		}
+	} else {
+		firstLine.innerHTML = 'First time here?';
+		secondLine.innerHTML = 'Welcome! Let us know if you have any questions.';
+
+	}
+});
+//const today = Date.now();
+//const christmasDate = new Date(Date.UTC(theDateToday.getFullYear(), 11, 25));
+// find difference between epoch times in ms and convert to days
+//let daysleft = (christmasDate.getTime() - Date.now()) / msToDays;
+
+//todayElement.textContent = today;
+//christmasElement.textContent = christmasDate.getTime();
+//christmasDateElement.textContent = christmasDate;
+//daysElement.textContent = `${daysleft.toFixed(0)} days`;

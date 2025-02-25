@@ -91,5 +91,10 @@
         grid-column: 3/4;
         grid-row: 1/3;
     }
-
+    .discover-main {
+        grid-template-columns: 1fr 2fr;
+    }
+    .discover-main h1 {
+        grid-column: 1/3;
+    }
  }

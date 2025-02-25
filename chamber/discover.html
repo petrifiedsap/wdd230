@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mineola Chamber of Commerce</title>
+    <meta name="description" content="Mineola Chamber of Commerce webpage">
+    <meta name="author" content="Amber Boyd">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&family=Quicksand:wght@300..700&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="chamber-favicon.ico">
+    <meta property="og:title" content="Amber Boyd - WDD 230 - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://petrifiedsap.github.io/wdd230/chamber/images/main-street.jpg">
+    <meta property="og:url" content="https://petrifiedsap.github.io/wdd230/">
+</head>
+<body>
+    <header>
+        <img id="header-logo" src="images/chamber-logo.webp" alt="Logo for Mineola Chamber of Commerce">
+        <button id="menu" title="menu button"></button>
+        <h1>Welcome to <br>The Mineola Chamber of Commerce</h1>
+        <div class="short-list">
+            <a href="https://www.facebook.com/">
+                <img src="images/Facebook_Logo_Primary.png" alt="Facebook logo">
+            </a>
+            <a href="https://www.linkedin.com/">
+                <img src="images/In-Blue-128@2x.png" alt="Linked In Logo">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/x-logo-white.webp" alt="X logo">
+            </a>
+        </div>
+        <label class="switch" title="dark mode switch">
+            <input type="checkbox" id="myCheck" onclick="darkMode()">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join!</a></li>
+        </ul>
+    </nav>
+    <main class="discover-main">
+        <h1>Discover our city!</h1>
+        <div class="information">
+            <section class="welcome sidebar">
+                <h2>Our fair city loves visitors, and so does our website!</h2>
+                <p class="label_first"></p>
+                <p class="label_second"></p>
+            </section>
+            <iframe class="sidebar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23C0CA33" style="border:solid 1px #777" width="600" height="600" frameborder="0" scrolling="no"></iframe>
+            <iframe class="sidebar" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215003.19528540788!2d-95.64285242021654!3d32.64813467545687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864996bda94a5213%3A0xdf2c6138fa1177c!2sMineola%2C%20TX%2075773!5e0!3m2!1sen!2sus!4v1740458445511!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+        <div class="attraction-pictures">
+            <section>
+                <div></div>
+            </section>
+            <img src="images/antique_shops_crop.webp" alt="antique shop shelves" loading="lazy" width="800" height="533">
+            <img src="images/Blue_bell_crop.webp" alt="Blue Bell ice cream truck" loading="lazy" width="800" height="533">
+            <img src="images/bluebonnets_crop.webp" alt="field of bluebonnets" loading="lazy" width="800" height="533">
+            <img src="images/campfire_crop.webp" alt="campfire at night" loading="lazy" width="800" height="800">
+            <img src="images/flea_markets_crop.webp" alt="flea market stalls" loading="lazy" width="800" height="800">
+            <img src="images/nature_preserve_crop.webp" alt="park with lake and picnic table" loading="lazy" width="800" height="533">
+            <img src="images/train_crop.webp" alt="train tracks" loading="lazy" width="800" height="533">
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Amber Boyd</p>
+        <p>Chamber of Commerce Home Page Build</p>
+        <p>WDD 230 BYUI</p>
+        <a href="#">Contact Us</a>
+        <div class="modified">
+            <p>Site Last Modified:</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
