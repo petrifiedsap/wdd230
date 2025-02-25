@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
 	const msToDays = 86400000;
 
-	// initialize display elements
+	// declare const for display
 	const firstLine = document.querySelector(".label_first");
 	const secondLine = document.querySelector(".label_second");
 
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		const today = Date.now();
 		let timeLapse = (Date.now() - lastVisit) / msToDays; 
 		if (timeLapse < 1) {
-			firstLine.innerHTML = '';
+			firstLine.innerHTML = 'You have been here before! ';
 			secondLine.innerHTML = 'Back so soon! Awesome!';
 		} else {
 			firstLine.innerHTML = 'We missed you!'

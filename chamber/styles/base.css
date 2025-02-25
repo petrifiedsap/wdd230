@@ -353,38 +353,61 @@ footer .modified {
 }
 
 /* This is the code for the main section on the discover page*/
-.discover-main {
+/*this is the div with the visits, map, and calendar sections*/
+.information {
     display: grid;
     grid-template-columns: 1fr;
-    text-align: center;
-    grid-gap: 2rem;
-    margin: 0 auto;
-}
-.discover-main h1 {
-    grid-column: 1/2;
-} 
-.welcome {
-    padding: 2rem;
-    background-color: var(--darkest);
-    color: white;
-}
-
-.information {
-    display: flex;
-    flex-direction: column;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-auto-rows: 600px;
 }
 .sidebar {
     padding-top: 2rem;
     width: 100%;
 }
-.information iframe {
-    width: 100%;
+.calendar {
+    border: solid 1px #777;
 }
-.info {
+.map {
+    border: 0;
+}
+.welcome {
+    box-sizing: border-box;
     font-weight: 800;
     font-family: thasadith, quicksand, sans-serif;
     padding: 2rem;
+    background-color: var(--darkest);
+    color: white;
+    text-align: center;
 }
-.map iframe {
-    border: 0;
+.welcome h2 {
+    padding-top: 3rem;
+}
+.welcome p {
+    padding: 2rem;
+}
+/* this is the picture section*/
+.attraction-pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    object-fit: contain;
+}
+.discover-main img {
+    width: 100%;
+    height: auto;
+}
+.attraction {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.caption {
+    position: absolute;
+    bottom: .25rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: lunasima, quicksand, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: rgb(207, 210, 178, .7);
+    padding: 1rem;
 }

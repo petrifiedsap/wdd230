@@ -11,11 +11,6 @@
     }
     #events h2 {
         grid-column: 1/4;
-
     }
-    .attraction-pictures {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-   
+    /*disocvery page */
 }
