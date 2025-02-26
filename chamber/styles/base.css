@@ -360,7 +360,6 @@ main {
 .information {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(auto, auto));
     grid-auto-rows: 600px;
     margin-left: 1rem;
     grid-gap: 2rem;
