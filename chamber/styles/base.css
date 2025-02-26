@@ -362,6 +362,8 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fill, );
     grid-auto-rows: 600px;
+    margin-left: 1rem;
+    grid-gap: 2rem;
 }
 .sidebar {
     padding-top: 2rem;
@@ -393,13 +395,12 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     object-fit: contain;
+    margin: 0 2rem;
+    grid-gap: 2rem;
 }
 .discover-main img {
     width: 100%;
     height: auto;
-    margin: 2rem;
-    margin-top: 0;
-
 }
 .attraction {
     position: relative;
@@ -412,7 +413,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: lunasima, quicksand, sans-serif;
-    font-size: 2rem;
+    font-size: clamp(.5rem, 3vw, 2rem);
     font-weight: bolder;
     background-color: rgb(207, 210, 178, .7);
     padding: 1rem;

@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		const today = Date.now();
 		let timeLapse = (Date.now() - lastVisit) / msToDays; 
 		if (timeLapse < 1) {
-			firstLine.innerHTML = 'You have been here before! ';
+			firstLine.innerHTML = 'You have been here before!';
 			secondLine.innerHTML = 'Back so soon! Awesome!';
 		} else {
 			firstLine.innerHTML = 'We missed you!'
@@ -62,12 +62,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	}
 });
-//const today = Date.now();
-//const christmasDate = new Date(Date.UTC(theDateToday.getFullYear(), 11, 25));
-// find difference between epoch times in ms and convert to days
-//let daysleft = (christmasDate.getTime() - Date.now()) / msToDays;
 
-//todayElement.textContent = today;
-//christmasElement.textContent = christmasDate.getTime();
-//christmasDateElement.textContent = christmasDate;
-//daysElement.textContent = `${daysleft.toFixed(0)} days`;
