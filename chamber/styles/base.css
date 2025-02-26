@@ -360,7 +360,7 @@ main {
 .information {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill, );
+    grid-template-rows: repeat(auto-fill, minmax(auto, auto));
     grid-auto-rows: 600px;
     margin-left: 1rem;
     grid-gap: 2rem;
@@ -418,3 +418,4 @@ main {
     background-color: rgb(207, 210, 178, .7);
     padding: 1rem;
 }
+.information
