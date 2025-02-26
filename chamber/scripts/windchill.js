@@ -1,8 +1,8 @@
 {
 const temp = document.querySelector('#temp');
-const tempValue = temp.innerHTML;
+const tempValue = parseFloat(temp.innerHTML);
 const wind = document.querySelector('#wind');
-const windValue = wind.innerHTML;
+const windValue = parseFloat(wind.innerHTML);
 const chill = document.querySelector('#windchill');
 
 function windChill(){
