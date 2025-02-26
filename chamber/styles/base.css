@@ -354,10 +354,13 @@ footer .modified {
 
 /* This is the code for the main section on the discover page*/
 /*this is the div with the visits, map, and calendar sections*/
+main {
+    box-sizing: border-box;
+}
 .information {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, );
     grid-auto-rows: 600px;
 }
 .sidebar {
@@ -394,6 +397,9 @@ footer .modified {
 .discover-main img {
     width: 100%;
     height: auto;
+    margin: 2rem;
+    margin-top: 0;
+
 }
 .attraction {
     position: relative;
