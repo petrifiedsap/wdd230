@@ -1,0 +1,58 @@
+:root {
+	--bg_darkest: rgb(61, 17, 17);
+    --bg_dark: rgb(92, 26, 26);
+    --zeb_light: rgb(250, 233, 233);
+	--zeb_dark:rgb(229, 189, 189); 
+}
+
+header h1 {
+    text-align: center;
+    color: var(--bg_darkest);
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+	margin: 5rem auto;
+	border: thin solid var(--bg_darkest);
+	box-shadow: 0 0 10px var(--zeb_dark);
+	border-collapse: collapse;
+    background-color: var(--zeb_light);
+}
+
+caption {
+    padding: 1rem;
+    caption-side: bottom;
+	color: var(--bg_darkest);
+}
+
+th, td {
+	padding: .5rem 1rem;
+	border: 1px solid var(--bg_darkest);
+}
+
+thead th {
+	background-color: var(--bg_dark);
+	font-size: larger;
+    color: var(--zeb_light);
+}
+
+.co {
+    background-color: var(--bg_darkest);
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zeb_dark);
+}
+
+footer {
+    text-align: center;
+    color: var(--bg_darkest);
+}

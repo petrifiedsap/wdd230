@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Build</title>
+    <meta name="description" content="a table that has been built">
+    <meta name="author" content="Amber Boyd">
+    <link rel="icon" href="../favicon.ico">
+    <meta property="og:title" content="Amber Boyd - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Amber Boyd home page for WDD 230 - Web Frontend Development, contains course assignment portal">
+    <meta property="og:image" content="https://petrifiedsap.github.io/wdd230/images/plano-compress.jpg">
+    <meta property="og:url" content="https://petrifiedsap.github.io/wdd230/">
+    <link rel="stylesheet" href="css/tablebuild.css">
+</head>
+<body>
+    <header>
+        <h1>I have Built a Table!</h1>
+
+    </header>
+    <main>
+        <!-- starts with table tag-->
+        <table>
+            <!-- gives the table a caption, goes right after the table tag, position with caption-side in css-->
+            <caption>Table 1: Account Feature Comparison</caption>
+            <!-- thead is for table head, lets you break the table up into groups for styling purposes-->
+            <!-- does not make a gap in the table, rows look continuous-->
+            <thead>
+                <!-- tr stands for table row, stops the tds from stringing together in one long row-->
+                <tr>
+                    <!-- th stand for table header, go at the top, names the column-->
+                    <!-- like h1 to a p, default bold and centered-->
+                    <th colspan="4" scope="colgroup" class="co">ACME Wildwest Services</th>
+                    <!-- colspan tells how many columns to span-->
+                    <!-- scope attribute explicitly states that this is a column or row header-->
+                    <!-- colgroup in scope attribute means this is a header for a group of columns-->
+                </tr>
+                <tr>
+                    <th scope="col" class="co"></th>
+                    <th scope="col">Basic</th>
+                    <th scope="col">Premium</th>
+                    <th scope="col">Deluxe</th>
+                </tr>
+            </thead>
+            <!-- t body is for table body, browser adds it implicitly if you don't add it explicitly-->
+            <tbody>
+                <tr>
+                    <th scope="row">Feature 1</th>
+                    <!-- td stand for table data, smallest unit, 1 cell-->
+                    <!-- When together like this, forms a row-->
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Feature 2</th>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Feature 3</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+        <h2>A Table you say?  How droll.</h2>
+        <h3>But where, might I ask, are the chairs?</h3>
+
+
+    </footer>
+</body>
+</html>
+
+
