@@ -8,6 +8,9 @@
     <meta name="author" content="Amber Boyd">
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/form.css">
     <meta property="og:title" content="Amber Boyd - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
@@ -34,8 +37,15 @@
         </ul>
     </nav>
     <main>
-        <form method="get" action="thanks.html" class="first-form">
-       
+        <div id="formmessage"></div>
+        <h1></h1>
+        <form method="get">
+            <label> User Name* <input type="text" id="userName" name="userName" required placeholder="Please enter your username"></label>
+            <label> Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}" title="Must contain 8 or more letters or numbers"></label>
+            <label> Re-enter your Password* <input type="password" id="password2" name="password2" required pattern="[A-Za-z0-9]{8,}" title="Must contain 8 or more letters or numbers"></label>
+            <label> Email* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.\-]+@byui.edu" placeholder="someoneloved@byui.edu" title="must be a valid byui.edu email address"></label>
+
+            <input type="submit" value="Propose My Course">
        
         </form>
                 
