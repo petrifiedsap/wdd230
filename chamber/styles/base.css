@@ -418,3 +418,12 @@ main {
     background-color: rgb(207, 210, 178, .7);
     padding: 1rem;
 }
+
+/* join form styling */
+.join-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.join-main label{
+    display: block;
+}
