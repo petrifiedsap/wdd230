@@ -55,7 +55,7 @@
                 <legend>Contact Information</legend>
                 <label> First Name* <input type="text" id="fname" name="fname" required placeholder="first name"></label>
                 <label> Last Name* <input type="text" id="lname" name="lname" required placeholder="last name"></label>
-                <label> Title or Position* <input type="text" id="position" name="position" required pattern="[A-Za-z[-' ']{7,}" title="Cannot contain number or special characters"></label>
+                <label> Title or Position* <input type="text" id="position" name="position" required pattern="[A-Za-z\s-]{7,}" title="Cannot contain number or special characters"></label>
                 <label> Email* <input type="email" id="email" name="email" required placeholder="someoneloved@byui.edu"></label>
                 <label> Mobile Phone Number* <input type="tel" id="phone" name="phone" required></label>
             </fieldset>
@@ -69,23 +69,24 @@
                 <label><input type="radio" name="level" value="gold"> Gold Membership</label>
                 <label> Describe your business <input type="text area" name="desc" id="desc"></label>
                 <label> <input type="hidden" name="time" id="time"></label>
-                <input type="submit" value="Join us!">
-            </fieldset>    
+            </fieldset>   
+            <input type="submit" value="Join us!">
+ 
         </form>
         <div id="levels">
-        <h2>The benefits of joining:</h2>
-        <h3>Non-Profit (Free) Membership</h3>
+        <h2>Membership Levels</h2>
+        <h3>Non-Profit Membership (Free)</h3>
         <p>This entry-level membership is designed for non-profit organizations to engage with the local business community and take advantage of Chamber resources. While it’s free of charge, it offers a range of services to help strengthen their presence and make meaningful connections.</p>
-        <h3>Benefits:</h3>
+        <h4>Benefits:</h4>
         <ul>
             <li>Access to Chamber events and networking opportunities.</li>
             <li>Listing in the Chamber’s online directory</li>
             <li>Eligibility to participate in community outreach programs</li>
             <li>Discounted rates for select Chamber-sponsored events and seminars</li>
         </ul>
-        <h3>Bronze Membership</h3>
-        <p>Overview: The Bronze level provides growing businesses with essential tools to connect, promote, and grow within the community. This level offers more exposure and additional resources than the Non-Profit membership, while remaining cost-effective.</p>
-        <h3>All Non-Profit benefits, plus:</h3>
+        <h3>Bronze Membership $100</h3>
+        <p>The Bronze level provides growing businesses with essential tools to connect, promote, and grow within the community. This level offers more exposure and additional resources than the Non-Profit membership, while remaining cost-effective.</p>
+        <h4>All Non-Profit benefits, plus:</h4>
         <ul>
             <li>Enhanced business listing in the Chamber directory</li>
             <li>Access to exclusive networking events</li>
@@ -93,9 +94,9 @@
             <li>Discounted advertising opportunities</li>
             <li>Access to member-only workshops and training sessions</li>
         </ul>
-        <h3>Silver Membership</h3>
-        <p>Overview: The Silver level is perfect for businesses looking to elevate their visibility and gain deeper involvement within the Chamber and the community. This membership is ideal for those seeking more access to resources, leadership, and opportunities.</p>
-        <h3>All Bronze benefits, plus:</h3>
+        <h3>Silver Membership $200</h3>
+        <p>The Silver level is perfect for businesses looking to elevate their visibility and gain deeper involvement within the Chamber and the community. This membership is ideal for those seeking more access to resources, leadership, and opportunities.</p>
+        <h4>All Bronze benefits, plus:</h4>
         <ul>
             <li>Priority placement in the Chamber directory</li>
             <li>Recognition at Chamber events as a Silver Member</li>
@@ -105,9 +106,9 @@
             <li>Access to a members-only business referral program</li>
             <li>Free or discounted entry to special seminars and workshops</li>
         </ul>
-        <h3>Gold Membership</h3>
-        <p>Overview: The Gold level is the premier membership designed for businesses and organizations that are looking for maximum visibility, networking, and influence in the community. This level provides top-tier access to the Chamber’s full range of services and opportunities.</p>
-        <h3>All Silver benefits, plus:</h3>
+        <h3>Gold Membership $300</h3>
+        <p>The Gold level is the premier membership designed for businesses and organizations that are looking for maximum visibility, networking, and influence in the community. This level provides top-tier access to the Chamber’s full range of services and opportunities.</p>
+        <h4>All Silver benefits, plus:</h4>
         <ul>
             <li>Premium placement in the Chamber directory</li>
             <li>Featured recognition on the Chamber’s website and social media channels</li>

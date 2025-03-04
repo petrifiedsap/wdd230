@@ -104,4 +104,9 @@
         box-shadow: 0 0 1rem #333;
 
     }
+    /*join page */
+    .join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
  }
