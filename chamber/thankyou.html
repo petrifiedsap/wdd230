@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mineola Chamber of Commerce</title>
+    <meta name="description" content="Mineola Chamber of Commerce webpage">
+    <meta name="author" content="Amber Boyd">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&family=Quicksand:wght@300..700&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="chamber-favicon.ico">
+    <meta property="og:title" content="Amber Boyd - WDD 230 - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://petrifiedsap.github.io/wdd230/chamber/images/main-street.jpg">
+    <meta property="og:url" content="https://petrifiedsap.github.io/wdd230/">
+</head>
+<body>
+    <header>
+        <img id="header-logo" src="images/chamber-logo.webp" alt="Logo for Mineola Chamber of Commerce">
+        <button id="menu" title="menu button"></button>
+        <h1>Welcome to <br>The Mineola Chamber of Commerce</h1>
+        <div class="short-list">
+            <a href="https://www.facebook.com/">
+                <img src="images/Facebook_Logo_Primary.png" alt="Facebook logo">
+            </a>
+            <a href="https://www.linkedin.com/">
+                <img src="images/In-Blue-128@2x.png" alt="Linked In Logo">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/x-logo-white.webp" alt="X logo">
+            </a>
+        </div>
+        <label class="switch" title="dark mode switch">
+            <input type="checkbox" id="myCheck" onclick="darkMode()">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join!</a></li>
+        </ul>
+    </nav>
+    <main class="thankyou-main">
+        <h1>Thank you for joining the Mineola Chamber of Commerce!</h1>
+        <h2>Please check back often to stay apprised of upcoming events, networking opportunities, and volunteer activities!</h2>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Amber Boyd</p>
+        <p>Chamber of Commerce Home Page Build</p>
+        <p>WDD 230 BYUI</p>
+        <a href="#">Contact Us</a>
+        <div class="modified">
+            <p>Site Last Modified:</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
