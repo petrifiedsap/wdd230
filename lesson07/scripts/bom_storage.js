@@ -25,7 +25,7 @@ function faveScripture() {
         //if it is empty reset focus
         input.focus();
     }
-};
+}
 
 function displayList(item) {
     //make new list element and button
@@ -44,15 +44,15 @@ function displayList(item) {
         deleteChapter(li.textContent);
         input.focus();
     });
-};
+}
 
 function setChapterList () {
     localStorage.setItem('chaptersBeLit', JSON.stringify(chaptersArray));
-};
+}
 
 function getChapterList() {
     return JSON.parse(localStorage.getItem('chaptersBeLit'));
-};
+}
 
 function deleteChapter(chapter) {
     chapter = chapter.slice(0, chapter.length - 1);

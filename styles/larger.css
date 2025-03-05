@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px) {
+@media only screen and (min-width: 650px) {
     .navigation {
         flex-direction: row;
         margin: 0;
@@ -25,7 +25,7 @@
         display: none;
     }
 }
-@media screen and (min-width: 500px) {
+@media only screen and (min-width: 500px) {
     .herolabel {
         top: .5rem;
         left: auto;
