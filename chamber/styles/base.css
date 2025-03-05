@@ -355,7 +355,7 @@ footer .modified {
 
 /* This is the code for the main section on the discover page*/
 /*this is the div with the visits, map, and calendar sections*/
-main {
+.discover-main {
     box-sizing: border-box;
 }
 .information {
