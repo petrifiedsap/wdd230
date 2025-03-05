@@ -1,3 +1,8 @@
+:root {
+        --darkest: #5e3023;
+        --text: black;
+        --light: #f6efa6;  
+}
 body {
     margin: 0;
     padding: 0;
@@ -15,8 +20,8 @@ h3 {
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: #5e3023;
-    color: #f6efa6;
+    background-color: var(--darkest);
+    color: var(--light);
     padding: 2em;
 }
 
@@ -40,7 +45,7 @@ header h1 {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: #f6efa6;
+    color: var(--light);
     grid-column: 1/2;
     grid-row: 1/2;
     justify-self: left;
@@ -61,8 +66,8 @@ header h1 {
     justify-content: space-evenly;
     list-style: none;
     padding-inline-start: 0;
-    background-color: #f6efa6;
-    color: #5e3023;
+    background-color: var(--light);
+    color: var(--darkest);
 }
 
 .navigation a {
@@ -70,12 +75,12 @@ header h1 {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: #5e3023;
+    color: var(--darkest);
 }
 
 .navigation a:hover {
-    background-color: #5e3023;
-    color: #f6efa6;
+    background-color: var(--darkest);
+    color: var(--light);
     font-weight: 700;
 }
 

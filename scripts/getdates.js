@@ -74,3 +74,13 @@ function checkMail() {
 	}
 }
 }
+{
+	const rtng = document.getElementById("ratingvalue");
+	const range = document.getElementById("rating");
+	range.addEventListener('change', displayRatingValue);
+	range.addEventListener('input', displayRatingValue);
+
+	function displayRatingValue() {
+		rtng.innerHTML = range.value; 
+	}
+}
