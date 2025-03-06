@@ -5,11 +5,11 @@
             "links" : [
                 {
                     "url" : "https://codepen.io/petrifiedsap/pen/azoQbyJ",
-                    "title": "Applied Javascript",
+                    "title": "Applied Javascript"
                 },
                 {
                     "url" : "lesson01/holygrail.html",
-                    "title": "Holygrail layout",
+                    "title": "Holygrail layout"
                 }]
         },
         {
@@ -17,15 +17,15 @@
             "links" : [
                 {
                     "url" : "lesson02/design.html",
-                    "title": "Design",
+                    "title": "Design"
                 },
                 {
                     "url" : "lesson02/media-query.html",
-                    "title": "Media Query",
+                    "title": "Media Query"
                 },
                 {
                     "url" : "lesson02/design-principles.html",
-                    "title": "Design Principles",
+                    "title": "Design Principles"
                 }] 
         },
         {
@@ -33,15 +33,15 @@
              "links" : [
                  {
                      "url" : "images/combexercise.webp",
-                     "title": "Combinator Exercise",
+                     "title": "Combinator Exercise"
                  },
                  {
                      "url" : "https://codepen.io/petrifiedsap/pen/QwLJwpG",
-                     "title": "Pseudo Elements",
+                     "title": "Pseudo Elements"
                  },
                  {
                      "url" : "https://codepen.io/petrifiedsap/pen/wBwQBqG",
-                     "title": "Hamburger Menu",
+                     "title": "Hamburger Menu"
                  }] 
          },
          {
@@ -49,7 +49,7 @@
              "links" : [
                  {
                      "url" : "https://codepen.io/petrifiedsap/pen/PwYVVgb",
-                     "title": "Pseudo Classes",
+                     "title": "Pseudo Classes"
                  }] 
          },
          {
@@ -57,7 +57,7 @@
              "links" : [
                  {
                      "url" : "lesson05/bom.html",
-                     "title": "Book of Mormon Favorite Chapters",
+                     "title": "Book of Mormon Favorite Chapters"
                  }] 
          },
          {
@@ -65,11 +65,11 @@
              "links" : [
                  {
                      "url" : "images/landscape_res_comp.webp",
-                     "title": "WebP Image",
+                     "title": "WebP Image"
                  },
                  {
                      "url" : "lesson06/responsive-images.html",
-                     "title": "Responsive Images",
+                     "title": "Responsive Images"
                  }] 
          },
          {
@@ -77,11 +77,11 @@
              "links" : [
                  {
                      "url" : "lesson07/lazyload.html",
-                     "title": "Lazy Loading",
+                     "title": "Lazy Loading"
                  },
                  {
                      "url" : "lesson07/bom_storage.html",
-                     "title": "Local Storage on the Favorite Chapter page",
+                     "title": "Local Storage on the Favorite Chapter page"
                  }] 
          },
          {
@@ -89,11 +89,11 @@
              "links" : [
                  {
                      "url" : "lesson08/tablebuild.html",
-                     "title": "HTML Table",
+                     "title": "HTML Table"
                  },
                  {
                      "url" : "lesson08/index.html",
-                     "title": "HTML Forms",
+                     "title": "HTML Forms"
                  }] 
          },
          {
@@ -101,15 +101,15 @@
              "links" : [
                  {
                      "url" : "",
-                     "title": "",
+                     "title": ""
                  },
                  {
                      "url" : "",
-                     "title": "",
+                     "title": ""
                  },
                  {
                      "url" : "",
-                     "title": "",
+                     "title": ""
                  }] 
          },
          {
@@ -117,15 +117,15 @@
              "links" : [
                  {
                      "url" : "",
-                     "title": "",
+                     "title": ""
                  },
                  {
                      "url" : "",
-                     "title": "",
+                     "title": ""
                  },
                  {
                      "url" : "",
-                     "title": "",
+                     "title": ""
                  }] 
          }]
 }

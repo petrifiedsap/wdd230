@@ -3,7 +3,7 @@ const linksURL = "https://petrifiedsap.github.io/wdd230/data/links.json";
 
 async function getLinks() {
     const response = await fetch(linksURL);
-    const data = wait response.json();
+    const data = await response.json();
     console.log(data);
 }
 

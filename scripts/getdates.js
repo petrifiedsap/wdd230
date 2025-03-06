@@ -38,11 +38,12 @@ localStorage.setItem("numVisits-ls", numVisits);
 const pw1 = document.querySelector("#password");
 const pw2 = document.querySelector("#password2");
 const message = document.querySelector("#form-message");
-
+// add function to check if pw2 exists, if null return
 pw2.addEventListener("focusout", checkSame);
 
 function checkSame() {
 	if (pw1.value !== pw2.value) {
+	
 		message.textContent = "❌ Passwords do not match!";
 		message.style.visibility = "show";
 		//put other styles here
