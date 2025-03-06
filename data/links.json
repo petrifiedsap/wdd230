@@ -1,0 +1,131 @@
+{
+    "lessons" : [
+        {
+            "lesson" : "01",
+            "links" : [
+                {
+                    "url" : "https://codepen.io/petrifiedsap/pen/azoQbyJ",
+                    "title": "Applied Javascript",
+                },
+                {
+                    "url" : "lesson01/holygrail.html",
+                    "title": "Holygrail layout",
+                }]
+        },
+        {
+           "lesson" : "02",
+            "links" : [
+                {
+                    "url" : "lesson02/design.html",
+                    "title": "Design",
+                },
+                {
+                    "url" : "lesson02/media-query.html",
+                    "title": "Media Query",
+                },
+                {
+                    "url" : "lesson02/design-principles.html",
+                    "title": "Design Principles",
+                }] 
+        },
+        {
+            "lesson" : "03",
+             "links" : [
+                 {
+                     "url" : "images/combexercise.webp",
+                     "title": "Combinator Exercise",
+                 },
+                 {
+                     "url" : "https://codepen.io/petrifiedsap/pen/QwLJwpG",
+                     "title": "Pseudo Elements",
+                 },
+                 {
+                     "url" : "https://codepen.io/petrifiedsap/pen/wBwQBqG",
+                     "title": "Hamburger Menu",
+                 }] 
+         },
+         {
+            "lesson" : "04",
+             "links" : [
+                 {
+                     "url" : "https://codepen.io/petrifiedsap/pen/PwYVVgb",
+                     "title": "Pseudo Classes",
+                 }] 
+         },
+         {
+            "lesson" : "05",
+             "links" : [
+                 {
+                     "url" : "lesson05/bom.html",
+                     "title": "Book of Mormon Favorite Chapters",
+                 }] 
+         },
+         {
+            "lesson" : "06",
+             "links" : [
+                 {
+                     "url" : "images/landscape_res_comp.webp",
+                     "title": "WebP Image",
+                 },
+                 {
+                     "url" : "lesson06/responsive-images.html",
+                     "title": "Responsive Images",
+                 }] 
+         },
+         {
+            "lesson" : "07",
+             "links" : [
+                 {
+                     "url" : "lesson07/lazyload.html",
+                     "title": "Lazy Loading",
+                 },
+                 {
+                     "url" : "lesson07/bom_storage.html",
+                     "title": "Local Storage on the Favorite Chapter page",
+                 }] 
+         },
+         {
+            "lesson" : "08",
+             "links" : [
+                 {
+                     "url" : "lesson08/tablebuild.html",
+                     "title": "HTML Table",
+                 },
+                 {
+                     "url" : "lesson08/index.html",
+                     "title": "HTML Forms",
+                 }] 
+         },
+         {
+            "lesson" : "09",
+             "links" : [
+                 {
+                     "url" : "",
+                     "title": "",
+                 },
+                 {
+                     "url" : "",
+                     "title": "",
+                 },
+                 {
+                     "url" : "",
+                     "title": "",
+                 }] 
+         },
+         {
+            "lesson" : "10",
+             "links" : [
+                 {
+                     "url" : "",
+                     "title": "",
+                 },
+                 {
+                     "url" : "",
+                     "title": "",
+                 },
+                 {
+                     "url" : "",
+                     "title": "",
+                 }] 
+         }]
+}
