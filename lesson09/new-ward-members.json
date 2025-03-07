@@ -1,0 +1,40 @@
+{
+    "ward" : {
+        "familyName":"Boyd", 
+        "moveInDate" : "Jan",
+        "numberOfPeople": "6",
+        "visitedByBishopric" : true,
+        "familyMembers" : [
+            {
+                "name" : "AJ",
+                "gender": "Male", 
+                "birthdate" : "2002-12-29"
+            },
+            {
+                "name" : "Cody",
+                "gender": "Male", 
+                "birthdate" : "1976-04-05"
+            },
+            {
+                "name" : "Amber",
+                "gender": "Female", 
+                "birthdate" : "1980-08-02"
+            },
+            {
+                "name" : "Daniel",
+                "gender": "Male", 
+                "birthdate" : "2008-03-11"
+            },
+            {
+                "name" : "Samuel",
+                "gender": "Male", 
+                "birthdate" : "2009-12-23"
+            },
+            {
+                "name" : "Lucy",
+                "gender": "Female", 
+                "birthdate" : "2012-10-24"
+            }
+        ]
+    }
+}
