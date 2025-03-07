@@ -1,0 +1,34 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+hr {
+    border-top: 1rem dotted rgb(28, 53, 33);
+    margin-bottom: 2rem;
+}
+main div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 400px));
+    margin: 0 auto;
+    grid-gap: 1rem;
+    justify-content: center;
+}
+main section {
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    background-color: rgb(122, 175, 132);
+}
+
+img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 2rem;
+    border: 3px solid rgb(28, 53, 33);
+    box-shadow: 1rem 1rem 3rem rgb(46, 71, 51);
+}
