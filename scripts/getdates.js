@@ -37,6 +37,8 @@ localStorage.setItem("numVisits-ls", numVisits);
 {
 const pw1 = document.querySelector("#password");
 const pw2 = document.querySelector("#password2");
+if (pw2 != null) {	
+
 const message = document.querySelector("#form-message");
 // add function to check if pw2 exists, if null return
 pw2.addEventListener("focusout", checkSame);
@@ -55,13 +57,14 @@ function checkSame() {
 	}
 }
 }
-
+}
 //for email check on forms page
 {
 const email = document.querySelector("#email");
 const emailPattern = /[@]byui\.edu/;
 const message = document.querySelector("#form-message");
 
+if (email != null) { 
 email.addEventListener("focusout", checkMail);
 
 function checkMail() {
@@ -75,13 +78,17 @@ function checkMail() {
 	}
 }
 }
+}
+
 {
 	const rtng = document.getElementById("ratingvalue");
 	const range = document.getElementById("rating");
+	if (range != null) {
 	range.addEventListener('change', displayRatingValue);
 	range.addEventListener('input', displayRatingValue);
 
 	function displayRatingValue() {
 		rtng.innerHTML = range.value; 
 	}
+}
 }
