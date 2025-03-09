@@ -1,7 +1,5 @@
 {
     "members" : [
-        {
-            "member" : [
                 {
                     "name" : "Mineola Packing Company",
                     "address" : "906 E Broad St, Mineola, TX 75773",
@@ -85,5 +83,3 @@
                 }
             ]
         }
-    ]
-}

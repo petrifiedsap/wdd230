@@ -1,29 +1,39 @@
-const url = '';
-const cards = document.querySelector('#cards');
+const url = 'data/members.json';
+const cards = document.querySelector('#member-cards');
 
-async function getProphetData() {
+async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
-    //console.table(data);
-    displayProphets(data.prophets); //prophets is the name of the array in the file that data retrieved
+    console.table(data);
+    displayMembers(data.members); 
 }
 
-getProphetData();
+getMemberData();
 
-const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
+const displayMembers = (members) => {
+    members.forEach((member) => {
         let card = document.createElement('section');
-        let fullName = document.createElement('h2');
-        let portrait = document.createElement('img');
+        let logo = document.createElement('img');
+        let name = document.createElement('h2');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
+        let website = document.createElement('a');
 
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-        portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of the prophet ${prophet.name} ${prophet.lastname}`);
-        portrait.setAttribute('loading', "lazy");
-        portrait.setAttribute('width', "340");
-        portrait.setAttribute('height', "440");
-        card.appendChild(fullName);
-        card.appendChild(portrait);
+        logo.setAttribute('src', member.logoFile);
+        logo.setAttribute('alt', `logo for ${member.name}`);
+        logo.setAttribute('loading', "lazy");
+        logo.setAttribute('width', "150");
+        logo.setAttribute('height', "auto");
+        name.textContent = `${member.name}`;
+        address.textContent = `${member.address}`;
+        phone.textContent = 'member.phoneNumber';
+        website.setAttribute('href', member.websiteURL);
+             
+        card.appendChild(logo);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
 
         cards.appendChild(card);
     });
