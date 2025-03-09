@@ -510,4 +510,6 @@ footer .modified {
 }
 
 /* here is for the toggle switch */
-
+#grid {
+    display: none;
+}
