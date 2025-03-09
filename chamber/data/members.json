@@ -3,63 +3,63 @@
                 {
                     "name" : "Mineola Packing Company",
                     "address" : "906 E Broad St, Mineola, TX 75773",
-                    "phoneNumber" : "9035695355",
+                    "phoneNumber" : "903-569-5355",
                     "websiteURL" : "https://www.mineolapacking.net",
-                    "logoFile" : "https://github.com/petrifiedsap/wdd230/tree/main/chamber/images",
+                    "logoFile" : "images/min-pack.jpg",
                     "membershipLevel" : "Gold",
                     "otherInfo" : "We have the meats!"
                 },
                 {
                     "name" : "Mineola Mercantile",
                     "address" : "109 E Broad St, Mineola, TX 75773",
-                    "phoneNumber" : "9035698585",
+                    "phoneNumber" : "903-569-8585",
                     "websiteURL" : "https://www.facebook.com/p/Mineola-Mercantile-100054530316280/",
-                    "logoFile" : "https://github.com/petrifiedsap/wdd230/tree/main/chamber/images",
+                    "logoFile" : "images/mineola_mercantile.webp",
                     "membershipLevel" : "Silver",
                     "otherInfo" : "Come rummage through our stuff"
                 },
                 {
                     "name" : "Higginbotham Brothers",
                     "address" : "401 S Pacific St, Mineola, TX 75773",
-                    "phoneNumber" : "9035695423",
+                    "phoneNumber" : "903-569-5423",
                     "websiteURL" : "https://www.higginbothams.com",
-                    "logoFile" : "https://github.com/petrifiedsap/wdd230/tree/main/chamber/images",
+                    "logoFile" : "images/higg.jpg",
                     "membershipLevel" : "Bronze",
                     "otherInfo" : "We have what you need to fix anything"
                 },
                 {
                     "name" : "Vivant Ideas",
                     "address" : "101 E Broad St Suite 200, Mineola, TX 75773",
-                    "phoneNumber" : "8172234200",
+                    "phoneNumber" : "817-223-4200",
                     "websiteURL" : "https://www.vivantideas.com",
-                    "logoFile" : "https://github.com/petrifiedsap/wdd230/tree/main/chamber/images",
+                    "logoFile" : "images/vivant_ideas.jpg",
                     "membershipLevel" : "Bronze",
                     "otherInfo" : ""
                 },
                 {
                     "name" : "JEB Mineola",
                     "address" : "104 N Johnson St, Mineola, TX 75773",
-                    "phoneNumber" : "9036386950",
+                    "phoneNumber" : "903-638-6950",
                     "websiteURL" : "https://www.jeb-sales.square.site",
-                    "logoFile" : "https://github.com/petrifiedsap/wdd230/tree/main/chamber/images",
+                    "logoFile" : "images/jeb.jpg",
                     "membershipLevel" : "Silver",
                     "otherInfo" : ""
                 },
                 {
                     "name" : "Lost Creek - Where nature is Found",
                     "address" : "113 e Broad St, Mineola, TX 75773",
-                    "phoneNumber" : "9035698228",
+                    "phoneNumber" : "903-569-8228",
                     "websiteURL" : "http://lostcreekonline.com",
-                    "logoFile" : "https://github.com/petrifiedsap/wdd230/tree/main/chamber/images",
+                    "logoFile" : "images/lake.jpg",
                     "membershipLevel" : "NP",
                     "otherInfo" : ""
                 },
                 {
                     "name" : "Kemp-Meek Manufacturing Co",
                     "address" : "101 Park Central Rd, Mineola, TX 75773",
-                    "phoneNumber" : "9035699700",
+                    "phoneNumber" : "903-569-9700",
                     "websiteURL" : "https://kempmeek.com/",
-                    "logoFile" : "https://github.com/petrifiedsap/wdd230/tree/main/chamber/images",
+                    "logoFile" : "images/kemp-meek.png",
                     "membershipLevel" : "Bronze",
                     "otherInfo" : ""
                 },
@@ -68,16 +68,16 @@
                     "address" : "111 S Johnson St, Mineola, TX 75773",
                     "phoneNumber" : "",
                     "websiteURL" : "https://envystylz.com/collections/staff-picks",
-                    "logoFile" : "https://github.com/petrifiedsap/wdd230/tree/main/chamber/images",
+                    "logoFile" : "images/envy_style.webp",
                     "membershipLevel" : "Gold",
                     "otherInfo" : ""
                 },
                 {
                     "name" : "The Game Store",
                     "address" : "421 E Broad St Ste 3, Mineola, TX 75773",
-                    "phoneNumber" : "9036386371",
+                    "phoneNumber" : "903-638-6371",
                     "websiteURL" : "",
-                    "logoFile" : "https://github.com/petrifiedsap/wdd230/tree/main/chamber/images",
+                    "logoFile" : "images/game_store.jpg",
                     "membershipLevel" : "Bronze",
                     "otherInfo" : ""
                 }

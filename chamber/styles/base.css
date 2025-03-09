@@ -476,3 +476,38 @@ footer .modified {
 .join-main li {
     font-size: .8rem;
 }
+
+/* this section is for the directory page */
+.main-directory h2 {
+    padding: 2rem;
+}
+#member-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 400px));
+    margin: 0 auto;
+    grid-gap: 1rem;
+    justify-content: center;
+}
+#member-cards section {
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    background-color: var(--accent-color);
+}
+#member-cards img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 2rem;
+    border: 3px solid var(--darkest);
+    margin-top: 2rem;
+}
+.phone {
+    margin-bottom: 2rem;
+}
+#member-cards p {
+    font-weight: 700;
+}
+
+/* here is for the toggle switch */
+
