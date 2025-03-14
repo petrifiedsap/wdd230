@@ -167,7 +167,11 @@ main hr {
 .info {
     font-family: Montserrat, "open sans", sans-serif;
     text-align: center;
-    padding: 2em;
+    padding-top: 1rem;
+}
+.weather {
+    text-align: center;
+    margin-bottom: 0;
 }
 
 iframe {
