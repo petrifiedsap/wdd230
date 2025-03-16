@@ -53,7 +53,7 @@ third.textContent = `${day}'s Weather`;
 
 let ddd = (function() {
     if (dayNumber > 4) {
-		return (dayNumber - 4)
+		return (dayNumber - 4);
 	} else {
 		return dayNumber;
 	}
@@ -62,4 +62,13 @@ let ddd = (function() {
 let dayNext = days[ddd];
 fourth.textContent = `${dayNext}'s Weather`;
 
+const closeBanner = document.getElementById('closebanner');
+const eventBanner = document.getElementById('eventbanner');
+closeBanner.addEventListener('click', () => {
+	eventBanner.classList.toggle('close');
+ });
+
+ if (dayNumber = 0 || dayNumber > 3) {
+	eventBanner.classList.toggle('close');
+ }
 

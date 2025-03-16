@@ -151,6 +151,23 @@ header {
   .slider.round:before {
     border-radius: 50%;
   }
+#eventbanner {
+    background-color: var(--accent-color);
+    padding: 2rem;
+}
+#eventbanner h2 {
+    text-align: center;
+}
+.close {
+    display: none;
+}
+
+
+
+
+
+
+
 /* here starts the code for main*/
 
   .hero img {
@@ -197,7 +214,9 @@ header {
 }
 #mission .join {
     border: 2px solid var(--darkest);
-
+    padding: 1.5rem;
+    text-decoration: none;
+    color: black;
 }
 
 /* current events section*/
