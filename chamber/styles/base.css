@@ -321,9 +321,24 @@ img.logo:nth-of-type(7) {
     display: flex;
     justify-self: center;
 }
+#weather-type {
+    align-content: center;
+}
+#weather-icon {
+    max-height: 2rem;
+    width: auto;
+}
 #temp, #wind, #windchill {
     text-align: right;
-    padding-right: 1rem;
+    padding: .5rem;
+}
+.hi {
+    text-align: center;
+    padding-top: .5rem;
+}
+.low {
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
 /* footer section */

@@ -103,28 +103,52 @@
             </div>
         </div>
         <div id="weather">
-            <h2>Weather here in Mineola</h2>
+            <h2>Mineola Weather</h2>
             <section>
-                <h3>Temperature</h3>
+                <h3>Today's Weather</h3>
                 <div class="weather-flex">
-                    <p id="temp">10</p>
-                    <p>℉</p>
+                    <p id="temp"></p>
+                </div>
+                <div class="weather-flex">
+                    <p id="weather-type"></p>
+                    <img id="weather-icon" src="" alt="">
                 </div>                
             </section>
             <section>
                 <h3>Windspeed</h3>
                 <div class="weather-flex">
-                    <p id="wind">22</p>
-                    <p>mph</p>
+                    <p id="wind"></p>
                 </div>
             </section>
             <section>
                 <h3>Wind Chill Factor</h3>
                 <div class="weather-flex">
                     <p id="windchill"></p>
-                    <p>℉</p>
                 </div>
             </section>
+            <section> <!-- weather for tomorrow-->
+                <h3>Tomorrow's Weather</h3>
+                <p class="hi" id="tomorrowhi"></p>
+                <p class="low" id="tomorrowlow"></p>
+            </section>
+            <section> <!-- weather for the next day-->
+                <h3 id="thirdday"></h3>
+                <p class="hi" id="nexthi"></p>
+                <p class="low" id="nextlow"></p>
+            </section>
+            <section> <!-- and the next day-->
+                <h3 id="fourthday"></h3>
+                <p class="hi" id="nextnexthi"></p>
+                <p class="low" id="nextnextlow"></p>
+            </section>
+            <!--Need to add a date object that shows today, 
+            and then increments for the next three days and 
+            says the date with the name of the day.  
+            then I need to make containers for the weather info.
+            It just needs to be the temperatures, not the other stuff
+            Will need to rearrange the weather section so need to make 
+            the screen narrow so I can start from there. 
+            -->
         </div>
     </main>
     <footer>

@@ -33,3 +33,33 @@ function darkMode() {
 		logoArea.style.background = accent;
 	}
 };
+
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const third = document.getElementById('thirdday');
+const fourth = document.getElementById('fourthday');
+
+const d = new Date();
+const dayNumber = d.getDay();
+let dd = (function() {
+    if (dayNumber > 4) {
+		return (dayNumber - 5)
+	} else {
+		return dayNumber;
+	}
+})();  
+
+let day = days[dd];
+third.textContent = `${day}'s Weather`;
+
+let ddd = (function() {
+    if (dayNumber > 4) {
+		return (dayNumber - 4)
+	} else {
+		return dayNumber;
+	}
+})();  
+
+let dayNext = days[ddd];
+fourth.textContent = `${dayNext}'s Weather`;
+
+
