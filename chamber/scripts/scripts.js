@@ -68,7 +68,11 @@ closeBanner.addEventListener('click', () => {
 	eventBanner.classList.toggle('close');
  });
 
- if (dayNumber = 0 || dayNumber > 3) {
+ window.addEventListener('load', bannerDisplay);
+
+function bannerDisplay() {
+ if (dayNumber == 0 || dayNumber > 3) {
 	eventBanner.classList.toggle('close');
  }
+}
 
