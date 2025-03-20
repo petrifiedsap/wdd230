@@ -40,14 +40,15 @@ const fourth = document.getElementById('fourthday');
 
 const d = new Date();
 const dayNumber = d.getDay();
+console.log(dayNumber);
 let dd = (function() {
     if (dayNumber > 4) {
 		return (dayNumber - 5)
 	} else {
-		return dayNumber;
+		return dayNumber + 2;
 	}
 })();  
-
+console.log(dd);
 let day = days[dd];
 third.textContent = `${day}'s Weather`;
 
@@ -55,10 +56,10 @@ let ddd = (function() {
     if (dayNumber > 4) {
 		return (dayNumber - 4);
 	} else {
-		return dayNumber;
+		return dayNumber + 3;
 	}
 })();  
-
+console.log(ddd);
 let dayNext = days[ddd];
 fourth.textContent = `${dayNext}'s Weather`;
 
