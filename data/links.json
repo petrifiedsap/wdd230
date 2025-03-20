@@ -5,7 +5,7 @@
             "links" : [
                 {
                     "url" : "https://codepen.io/petrifiedsap/pen/azoQbyJ",
-                    "title": "Applied Javascript"
+                    "title": "Applied Javascript  |"
                 },
                 {
                     "url" : "lesson01/holygrail.html",
@@ -17,11 +17,11 @@
             "links" : [
                 {
                     "url" : "lesson02/design.html",
-                    "title": "Design"
+                    "title": "Design  |"
                 },
                 {
                     "url" : "lesson02/media-query.html",
-                    "title": "Media Query"
+                    "title": "Media Query  |"
                 },
                 {
                     "url" : "lesson02/design-principles.html",
@@ -33,11 +33,11 @@
              "links" : [
                  {
                      "url" : "images/combexercise.webp",
-                     "title": "Combinator Exercise"
+                     "title": "Combinator Exercise  |"
                  },
                  {
                      "url" : "https://codepen.io/petrifiedsap/pen/QwLJwpG",
-                     "title": "Pseudo Elements"
+                     "title": "Pseudo Elements  |"
                  },
                  {
                      "url" : "https://codepen.io/petrifiedsap/pen/wBwQBqG",
@@ -65,7 +65,7 @@
              "links" : [
                  {
                      "url" : "images/landscape_res_comp.webp",
-                     "title": "WebP Image"
+                     "title": "WebP Image  |"
                  },
                  {
                      "url" : "lesson06/responsive-images.html",
@@ -77,7 +77,7 @@
              "links" : [
                  {
                      "url" : "lesson07/lazyload.html",
-                     "title": "Lazy Loading"
+                     "title": "Lazy Loading  |"
                  },
                  {
                      "url" : "lesson07/bom_storage.html",
@@ -89,7 +89,7 @@
              "links" : [
                  {
                      "url" : "lesson08/tablebuild.html",
-                     "title": "HTML Table"
+                     "title": "HTML Table  |"
                  },
                  {
                      "url" : "lesson08/index.html",
@@ -100,16 +100,12 @@
             "lesson" : "09",
              "links" : [
                  {
-                     "url" : "",
-                     "title": ""
+                     "url" : "lesson09/new-ward-members.json",
+                     "title": "JSON file  |"
                  },
                  {
-                     "url" : "",
-                     "title": ""
-                 },
-                 {
-                     "url" : "",
-                     "title": ""
+                     "url" : "lesson09/prophets.html",
+                     "title": "Latter-day Prophets"
                  }] 
          },
          {
