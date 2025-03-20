@@ -160,6 +160,7 @@ main hr {
 }
 .card a {
     text-decoration: none;
+    color: black;
 }
 .card ul {
     list-style-type: none;
