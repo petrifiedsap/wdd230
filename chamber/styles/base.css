@@ -284,6 +284,7 @@ header {
     margin: 0;
     background-color: white;
 }
+
 /*section with logo cloud*/
 #logos {
     display: grid;
@@ -325,6 +326,14 @@ img.logo:nth-of-type(6) {
 img.logo:nth-of-type(7) {
     grid-column: 3/4;
     grid-row: 5/6;
+}
+img.logo:nth-of-type(8) {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+img.logo:nth-of-type(9) {
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
  /* weather section*/
  #weather {
