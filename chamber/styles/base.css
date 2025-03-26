@@ -24,7 +24,7 @@ h2 {
 h3 {
     font-size: clamp(1rem, 3vw, 27px);
 }
-a, p, button {
+a, p, button, li {
     font-size: clamp(.75rem, 2vw, 2vw);
     font-weight: 600;
 }
@@ -480,6 +480,7 @@ footer .modified {
 }
 .join-main ul {
     list-style:disc;
+    padding-bottom: 1rem;
 }
 .join-main li {
     font-size: .8rem;
@@ -488,6 +489,7 @@ footer .modified {
 /* this section is for the directory page */
 .main-directory h2 {
     padding: 2rem;
+    background-color: var(--accent-color);
 }
 #member-cards {
     display: grid;
@@ -502,6 +504,7 @@ footer .modified {
     max-width: 400px;
     text-align: center;
     background-color: var(--accent-color);
+    padding-bottom: 2rem;
 }
 #member-cards img {
     width: 70%;
@@ -510,9 +513,6 @@ footer .modified {
     border: 3px solid var(--darkest);
     margin-top: 2rem;
 }
-.phone {
-    margin-bottom: 2rem;
-}
 #member-cards p {
     font-weight: 700;
 }
@@ -520,4 +520,28 @@ footer .modified {
 /* here is for the toggle switch */
 #grid {
     display: none;
+    margin: 0 auto;
+}
+#list {
+    display: block;
+    margin: 0 auto;
+
+}
+#member-list {
+    display: none;
+    flex-direction: column;
+}
+#member-list section:nth-child(even) {
+	background-color: var(--accent-color);
+}
+#member-list p {
+    text-align: center;
+}
+.listing {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.listing a {
+    text-align: center;
 }
