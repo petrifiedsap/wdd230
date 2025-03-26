@@ -65,6 +65,14 @@
          flex-direction: row;
      }
 
+     #logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        background-color: var(--accent-color);
+    }
+.logo {
+    padding: 1.5rem;
+}
      #weather {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

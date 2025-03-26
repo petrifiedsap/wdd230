@@ -77,7 +77,7 @@ function bannerDisplay() {
  }
 }
 
-const url = 'data/members.json';
+const urlToo = 'data/members.json';
 const logoOne = document.querySelector('#logo1');
 const logoTwo = document.querySelector('#logo2');
 const logoThree = document.querySelector('#logo3');
@@ -89,7 +89,7 @@ const logoEight = document.querySelector('#logo8');
 const logoNine = document.querySelector('#logo9');
 
 async function getMemberData() {
-    const response = await fetch(url);
+    const response = await fetch(urlToo);
     const data = await response.json();
     // console.table(data);
     showMembers(data.members); 
