@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    font-family: Delius, Ruluko, sans-seriff;
+
+}
+:root {
+    --darkest: #2D232E;
+    --darker-blue: #436389;
+    --lighter-blue: #96d0ee;
+    --yellow: #ffffb0;
+    --pink-melon: #ffa69e; 
+}
+h1, h2, h3 {
+    font-family: Jua, Ruluko, sans-seriff;
+    text-align: center;
+}
+
+header {
+    background-color:var(--pink-melon);
+    color: var(--darkest);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+header img {
+    width: 100%;
+}
+
+/* code for hamburger menu */
+#menu /*this is the button */ {
+	font-size: 2rem;
+	border: 0;
+	background: none;
+	color: var(--darkest);
+}
+/* this is the button!! */
+#menu::before {
+	content: "☰";
+}
+#menu.open::before {
+	content: "X";
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+    padding-inline-start: 0;
+	background-color: var(--lighter-blue);
+	color: var(--darkest);
+}
+.navigation a {
+	display: none;
+	padding: .5rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--darkest);
+    font-weight: 600;
+}
+.navigation a:hover {
+	background-color: var(--bg-light);
+	color: var(--darkest);
+	font-weight: 700;
+}
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+/* end of hamburger css*/
+nav a img {
+    max-width: 4vw;
+}
+
+
+
+footer {
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+footer h3 {
+    padding-top: 1rem;
+}
+.location, .weather {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.location div {
+    padding-top: 1rem;
+}
+.tomorrow {
+    padding-top: 0;
+}
+
