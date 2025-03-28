@@ -193,7 +193,7 @@ header {
     grid-column: 1/2;
     grid-row: 2/3;
     width: 10rem;
-    height: 2rem;
+    height: 4vw;
     margin: 1rem;    
 }
 .join {
