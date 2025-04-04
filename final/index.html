@@ -19,8 +19,9 @@
     <link rel="stylesheet" href="styles/medium.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo-pink.webp" alt="Scoots logo">
+   <header>
+        <div id="today-hi"></div>
+        <img src="images/logo-pink.webp" alt="Scoots logo" loading="lazy">
         <button id="menu" title="menu button"></button>        
     </header>
     <nav>
@@ -35,6 +36,42 @@
 
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 650px)">
+                <source srcset="images/hero-med.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="picture of jade cenote on Cozumel" width="1500" height="844" loading="lazy">
+            </picture>
+            <h2>Find yourself... <br> on Cozumel</h2>
+            <a href="reservations.html" class="button">Book Now!</a>
+        </div>
+        <h1>Scoots</h1>
+        <!-- This section contributed by ChatGPT-->
+        <p>Welcome to Scoots, your ultimate destination for exploring the stunning island of Cozumel! Whether you’re looking to cruise the coastline on a scooter, tackle rugged trails in an ATV, or enjoy a comfortable ride in a Jeep, we have the perfect vehicle to suit your adventure style. </p>
+
+        <div class="options">
+            <section class="choice scooter">
+                <a href="reservations.html"><img src="images/funscooter.webp" alt="people having fun on a scooter" loading="lazy"></a>
+                <h3 class="label button">Scooters --></h3>
+            </section>
+            <section class="choice jeep">
+                <a href="reservations.html"><img src="images/funjeep.webp" alt="a jeep on an island" loading="lazy"></a>
+                <h3 class="label button">Jeeps --></h3>
+            </section>
+            <section class="choice atv">
+                <a href="reservations.html"><img src="images/funatv.webp" alt="people having fun on an atv" loading="lazy"></a>
+                <h3 class="label button">ATVs --></h3>
+            </section>
+        </div>
+        <div class="about-us">
+            <h3>More than just scooters...</h3>
+            <!-- This section contributed by ChatGPT-->
+            <p>As a locally owned and operated business, our mission is simple: to provide you with the freedom to explore Cozumel at your own pace. We offer a wide range of rental options— Honda scooters and ATVs, and 2- and 4-door Jeeps—that allow you to discover everything this tropical paradise has to offer, from hidden beaches to scenic viewpoints and vibrant local spots. </p>
+                
+            <p>With years of experience and a deep love for the island, our team is dedicated to ensuring you have a seamless and unforgettable experience. Our fleet of well-maintained, high-quality vehicles is ready to take you wherever your adventure leads, whether that's off-road or cruising along the shore. </p>
+                
+            <p>At Scoots, we’re here to help you make the most of your visit with personalized service, expert recommendations, and everything you need for a safe and exciting ride. Let your Cozumel adventure begin!</p>
+        </div>
 
     </main>
     <footer>

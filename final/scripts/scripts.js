@@ -9,7 +9,7 @@ hamButton.addEventListener('click', () => {
 
 const todayTemp = document.querySelector('#temp');
 const humid = document.querySelector('#humidity');
-
+const hi = document.querySelector('#today-hi')
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.92&appid=9a3623d99a7e974b0da966d7fba6576e&units=imperial';
 
@@ -33,6 +33,7 @@ apiFetch();
 function displayResults(data) {
     todayTemp.textContent = `${Math.round(data.main.temp)}°F`;
     humid.textContent = `${data.main.humidity}% Humidity`;
+    hi.textContent = `${data.main.temp_max}`;
 
     data.weather.forEach(weather => { 
         const iconsrc = `https://openweathermap.org/img/w/${weather.icon}.png`;
