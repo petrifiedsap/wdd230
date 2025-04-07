@@ -17,23 +17,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Jua&family=Ruluko&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo-pink-smaller.jpg" alt="Scoots logo">
+   <header>
+        <div class="tempbanner">
+            <div id="today-hi"></div>
+            <button id="hibanner" title="today's hi close button"></button>
+        </div>
+        <a href="index.html">
+            <img src="images/logo-pink.webp" alt="Scoots logo" loading="lazy">
+        </a>
         <button id="menu" title="menu button"></button>        
-    </header>
+    
     <nav>
         <ul class="navigation">
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="rentals.html">Rental Information</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="https://facebook.com"><img src="images/Facebook_Logo_Primary.png" alt="facebook logo with link"></a></li>
-            <li><a href="https://instagram.com"><img src="images/Instagram_Glyph_White.png" alt="instagram logo with link"></a></li>
-            <li><a href="https://x.com"><img src="images/x-logo-white.png" alt="X logo with link"></a></li>
+            <li><a href="https://instagram.com"><img src="images/Instagram_Glyph_Black.png" alt="instagram logo with link"></a></li>
+            <li><a href="https://x.com"><img src="images/x-logo-black.png" alt="X logo with link"></a></li>
         </ul>
 
     </nav>
+</header>
     <main>
         <p>company description on main page is from ChatGPT</p>
         <p></p>
@@ -43,9 +51,11 @@
         <section class="location">
             <h3 class=>Locations</h3>
             <div>Cozumel El Centro location: </div>
-            <p>Near the Playa del Carmen-Cozumel Ferry dock</p>
+            <p>Near the Playa del Carmen-Cozumel Ferry dock <br>Call us at 5-555-555-5555</p>
+
             <div>Huerto Familiar location: </div>
-            <p>Near the Terminal Puerta Maya</p>
+            <p>Near the Terminal Puerta Maya <br>Call us at 5-555-555-5556</p>
+            <h3><a href="attributions.html">Attributions</a></h3>
         </section>
         <section class="weather">
             <h3>Today's Weather</h3>

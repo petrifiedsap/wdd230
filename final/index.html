@@ -17,13 +17,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Jua&family=Ruluko&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
    <header>
-        <div id="today-hi"></div>
+        <div class="tempbanner">
+            <div id="today-hi"></div>
+            <button id="hibanner" title="today's hi close button"></button>
+        </div>
+        <a href="index.html">
         <img src="images/logo-pink.webp" alt="Scoots logo" loading="lazy">
+        </a>
         <button id="menu" title="menu button"></button>        
-    </header>
+    
     <nav>
         <ul class="navigation">
             <li><a href="contact.html">Contact Us</a></li>
@@ -35,6 +41,7 @@
         </ul>
 
     </nav>
+</header>
     <main>
         <div class="hero">
             <picture>
@@ -47,20 +54,36 @@
         </div>
         <h1>Scoots</h1>
         <!-- This section contributed by ChatGPT-->
-        <p>Welcome to Scoots, your ultimate destination for exploring the stunning island of Cozumel! Whether you’re looking to cruise the coastline on a scooter, tackle rugged trails in an ATV, or enjoy a comfortable ride in a Jeep, we have the perfect vehicle to suit your adventure style. </p>
+        <p>Welcome to Scoots, your ultimate destination for exploring the stunning island of Cozumel! 
+            Whether you’re looking to cruise the coastline on a scooter, tackle rugged trails in an ATV, or enjoy a comfortable ride in a Jeep, we have the perfect vehicle to suit your adventure style. </p>
 
         <div class="options">
             <section class="choice scooter">
-                <a href="reservations.html"><img src="images/funscooter.webp" alt="people having fun on a scooter" loading="lazy"></a>
-                <h3 class="label button">Scooters --></h3>
+                <a href="reservations.html">
+                    <picture>
+                        <source srcset="images/funscooter.webp" type="image/webp" media="(max-width: 650px)">
+                        <img src="images/scooter-profile.webp" alt="people having fun on a scooter" width="546" height="683" loading="lazy">
+                    </picture></a>
+                <h3 class="label button">Scooters --> </h3>
+                <p class="button caption">From $20/Half Day!</p>
             </section>
             <section class="choice jeep">
-                <a href="reservations.html"><img src="images/funjeep.webp" alt="a jeep on an island" loading="lazy"></a>
+                <a href="reservations.html">
+                    <picture>
+                        <source srcset="images/funjeep.webp" media="(max-width: 650px)">
+                        <img src="images/jeep-profile.webp" alt="a jeep on an island" width="546" height="683" loading="lazy">
+                    </picture></a>
                 <h3 class="label button">Jeeps --></h3>
+                <p class="button caption">From $60/Half Day!</p>
             </section>
             <section class="choice atv">
-                <a href="reservations.html"><img src="images/funatv.webp" alt="people having fun on an atv" loading="lazy"></a>
+                <a href="reservations.html">
+                    <picture>
+                        <source srcset="images/funatv.webp" media="(max-width: 650px)">
+                        <img src="images/atv-profile.webp" alt="people having fun on an atv" width="546" height="683" loading="lazy">
+                    </picture></a>
                 <h3 class="label button">ATVs --></h3>
+                <p class="button caption">From $50/Half Day!</p>
             </section>
         </div>
         <div class="about-us">
@@ -78,9 +101,11 @@
         <section class="location">
             <h3 class=>Locations</h3>
             <div>Cozumel El Centro location: </div>
-            <p>Near the Playa del Carmen-Cozumel Ferry dock</p>
+            <p>Near the Playa del Carmen-Cozumel Ferry dock <br>Call us at 5-555-555-5555</p>
+
             <div>Huerto Familiar location: </div>
-            <p>Near the Terminal Puerta Maya</p>
+            <p>Near the Terminal Puerta Maya <br>Call us at 5-555-555-5556</p>
+            <h3><a href="attributions.html">Attributions</a></h3>
         </section>
         <section class="weather">
             <h3>Today's Weather</h3>

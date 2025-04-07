@@ -1,3 +1,12 @@
+// for temp banner
+const tempButton = document.querySelector('#hibanner');
+const tempBanner = document.querySelector('.tempbanner');
+
+tempButton.addEventListener('click', () => {
+	tempBanner.classList.toggle('closed');
+	//tempButton.classList.toggle('closed');
+});
+
 // for hamburger menu
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
@@ -33,7 +42,7 @@ apiFetch();
 function displayResults(data) {
     todayTemp.textContent = `${Math.round(data.main.temp)}°F`;
     humid.textContent = `${data.main.humidity}% Humidity`;
-    hi.textContent = `${data.main.temp_max}`;
+    hi.textContent = `Today's hi will be ${Math.round(data.main.temp_max)}°F`;
 
     data.weather.forEach(weather => { 
         const iconsrc = `https://openweathermap.org/img/w/${weather.icon}.png`;
