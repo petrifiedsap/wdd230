@@ -176,10 +176,6 @@ nav a img {
     font-weight: 400;
 }
 
-
-
-
-
 footer {
     background-color: var(--yellow);
     display: flex;
@@ -205,3 +201,11 @@ footer h3 {
     padding-top: 0;
 }
 
+/* for rentals page */
+table {
+    width: 100%;
+}
+td img {
+    width: clamp(60px, 15vw, 300px);
+    
+}

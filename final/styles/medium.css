@@ -31,5 +31,9 @@
         justify-content: space-evenly;
     }
 
+    td img {
+        width: clamp(60px, 25vw, 300px);
+        
+    }
    
     }
