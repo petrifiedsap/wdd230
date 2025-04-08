@@ -29,21 +29,101 @@
             <img src="images/logo-pink.webp" alt="Scoots logo" loading="lazy">
         </a>
         <button id="menu" title="menu button"></button>        
-    
-    <nav>
-        <ul class="navigation">
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="rentals.html">Rental Information</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="https://facebook.com"><img src="images/Facebook_Logo_Primary.png" alt="facebook logo with link"></a></li>
-            <li><a href="https://instagram.com"><img src="images/Instagram_Glyph_Black.png" alt="instagram logo with link"></a></li>
-            <li><a href="https://x.com"><img src="images/x-logo-black.png" alt="X logo with link"></a></li>
-        </ul>
-
-    </nav>
-</header>
-    <main>
-
+        <nav>
+            <ul class="navigation">
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="rentals.html">Rental Information</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="https://facebook.com"><img src="images/Facebook_Logo_Primary.png" alt="facebook logo with link"></a></li>
+                <li><a href="https://instagram.com"><img src="images/Instagram_Glyph_Black.png" alt="instagram logo with link"></a></li>
+                <li><a href="https://x.com"><img src="images/x-logo-black.png" alt="X logo with link"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="reservations">
+        
+        <div id="formmessage"></div>
+        <h1>Make a Reservation</h1>
+        <form method="get" action="record.html">
+            <fieldset>
+            <label> First Name* <input type="text" name="fname" id="fname" required></label>
+            <label> Last Name* <input type="text" name="lname" id="lname" required></label>
+            <label> Phone* <input type="phone" id="phone" name="phone" required pattern="[0-9]{12,}"></label>
+            <label> Home Country* <input type="text" id="home_country" name="home_country" required title=""></label>
+            <label> Email* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.\-]+@byui.edu" placeholder="someoneloved@byui.edu" title="must be a valid byui.edu email address"></label>
+            <label> Cruise Line (if applicable) <input type="text" name="cruise_line" id="cruise_line"></label>
+        </fieldset>
+        <fieldset>
+            <label> Date of Reservation <input type="date" name="res_date" id="res_date"></label>
+            <label> Length of Reservation <input type="number" name="length" id="length"></label>
+            <div> Vehicle </div>
+            <label><input type="radio" name="vehicle" value="scooter_metro"> Honda Metro Scooter </label>
+            <label><input type="radio" name="vehicle" value="scooter_dio"> Honda Dio Scooter </label>
+            <label><input type="radio" name="vehicle" value="scooter_pcx150"> Honda PCX150 Scooter </label>
+            <label><input type="radio" name="vehicle" value="atv"> Honda Pioneer ATV </label>
+            <label><input type="radio" name="vehicle" value="jeep_4"> Jeep Wrangler 4-door </label>
+            <label><input type="radio" name="vehicle" value="jeep_2"> Jeep Wrangler 2-door </label>
+            <label> Requests/Comments <input type="text" name="comments" id="comments"></label>
+        </fieldset>
+        <h2>Please Review our terms and conditions</h2>
+        <div class="rentaldetails">
+            <h3>Rental Requirements</h3>
+            <ul>
+                <li>Renter must be at least 18 years old (21 for Jeep rentals).</li>
+                <li>A valid driver’s license is required (international licenses accepted).</li>
+                <li>A credit card is required for booking and security deposit.</li>
+            </ul>
+            <h3>Rates & Payment</h3>
+            <ul>
+                <li>Rentals are charged per half-day or full-day.</li>
+                <li>Fuel is not included in the rental price.</li>
+                <li>A refundable damage deposit is required (amount varies by vehicle type).</li>
+            </ul>
+            <h3>Insurance & Liability</h3>
+            <ul>
+                <li>Basic liability insurance is included in the rental fee.</li>
+                <li>Optional damage waiver is available for an additional charge.</li>
+                <li>The renter is responsible for:</li>
+                <ul>
+                    <li>Damage or loss of the vehicle</li>
+                    <li>Traffic violations or fines incurred during rental</li>
+                    <li>Injury to passengers or third parties (unless covered by insurance)</li>
+                </ul>
+            </ul>
+            <h3>Use of Vehicle</h3>
+            <ul>
+                <li>Vehicles may be used on paved roads only (ATVs may be used off-road in designated areas).</li>
+                <li>Off-roading is prohibited for scooters and Jeeps.</li>
+                <li>Helmets must be worn at all times (provided with rental).</li>
+                <li>Driving under the influence of drugs or alcohol is strictly prohibited.</li>
+            </ul>
+            <h3>Return Policy</h3>
+            <ul>
+                <li>Vehicles must be returned on time and in the same condition as received.</li>
+                <li>Late returns may incur additional fees (half-day or full-day rate).</li>
+                <li>Lost or damaged items (keys, helmets, etc.) will be charged at replacement value.</li>
+            </ul>
+            <h3>Cancellations & Refunds</h3>
+            <ul>
+                <li>Full refunds are available for cancellations made 24 hours or more in advance.</li>
+                <li>No refunds will be issued for:</li>
+                <ul>
+                    <li>Same-day cancellations</li>
+                    <li>Early returns</li>
+                </ul>
+            </ul>
+            <h3>Emergency Contact</h3>
+            <ul>
+                <li>In case of mechanical issues or an accident, contact Scoots immediately at:
+                    +52 987 555 1234</li>                
+            </ul>
+        </div>
+        <fieldset>
+            <label> I have read and understood these terms and conditions <input type="checkbox" name="confirm" id="confirm"></label>
+        </fieldset>
+            <input type="submit" value="Complete Reservation">
+        </form>
+    </main>
     </main>
     <footer>
         <section class="location">
