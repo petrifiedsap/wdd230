@@ -9,7 +9,7 @@
     --yellow: #ffffb0;
     --pink-melon: #ffa69e; 
 }
-h1, h2, h3 {
+h1, h2, h3, th {
     font-family: Jua, Ruluko, sans-seriff;
     text-align: center;
     font-weight: 500;
@@ -20,10 +20,10 @@ h1 {
 h2, #menu {
     font-size: clamp(1.3rem, 4vw, 36px);
 }
-h3 {
+h3, th {
     font-size: clamp(1.1rem, 3vw, 27px);
 }
-a, p, button, li {
+a, p, button, li, td {
     font-size: clamp(1rem, 2vw, 2vw);
     font-weight: 500;
 }
@@ -204,8 +204,70 @@ footer h3 {
 /* for rentals page */
 table {
     width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+th, td {
+    border: 1px solid black;
+}
+th h2 {
+    padding: 1rem;
+}
+th {
+    padding: 1rem 0;
 }
 td img {
     width: clamp(60px, 15vw, 300px);
     
 }
+
+/* for reservations page */
+.reservations label, .join-main fieldset div {
+    display: block;
+    padding-top: 1rem;
+}
+.reservations fieldset, .rentaldetails {
+    margin: 2rem;
+    border: 1px solid var(--darkest);
+    border-radius: 6px;
+}
+.reservations legend {
+    color: var(--darkest);
+    padding: 0 .5rem;
+}
+.reservations input {
+    display: block;
+    background-color: #ecf0cc;
+    border: solid 1px var(--darkest);
+    border-radius: 6px;
+    padding: .5rem;
+    width: 80%;
+    max-width: 400px;
+
+}
+.reservations input[type="radio"], .reservations input[type="checkbox"] {
+    display: inline;
+    width: 10%;
+}
+
+.reservations input[type="submit"] {
+    border: solid 1px var(--darkest);
+    border-radius: 6px;
+    background-color: #ecf0cc;
+    padding: .8rem;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.reservations h3 {
+    padding-top: 1rem;
+}
+
+.reservations ul {
+    list-style:disc;
+    padding-bottom: 1rem;
+}
+

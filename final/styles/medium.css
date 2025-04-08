@@ -35,5 +35,21 @@
         width: clamp(60px, 25vw, 300px);
         
     }
+    /* reservations page */
+    
+    .reservations .rentaldetails {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .terms-title {
+        grid-column: 1/3;
+    }
+    .emergency {
+        grid-column: 1/3;
+        text-align: center;
+    }
+    .emergency li {
+        list-style-type: none;
+    }
    
     }
