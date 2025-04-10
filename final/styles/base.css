@@ -23,8 +23,8 @@ h2, #menu {
 h3, th {
     font-size: clamp(1.1rem, 3vw, 27px);
 }
-a, p, button, li, td {
-    font-size: clamp(1rem, 2vw, 2vw);
+a, p, button, li, td, label, div {
+    font-size: clamp(1rem, 2vw, 20px);
     font-weight: 500;
 }
 p {
@@ -183,8 +183,9 @@ footer {
     background-color: var(--yellow);
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
+    padding: 2rem;
     border-top: 2px solid var(--darkest);
+    margin-top: 3rem;
 }
 footer p {
     padding: 0;
