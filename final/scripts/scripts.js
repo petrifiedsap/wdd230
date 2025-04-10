@@ -1,12 +1,3 @@
-// for temp banner
-const tempButton = document.querySelector('#hibanner');
-const tempBanner = document.querySelector('.tempbanner');
-
-tempButton.addEventListener('click', () => {
-	tempBanner.classList.toggle('closed');
-	//tempButton.classList.toggle('closed');
-});
-
 // for hamburger menu
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
@@ -18,7 +9,6 @@ hamButton.addEventListener('click', () => {
 
 const todayTemp = document.querySelector('#temp');
 const humid = document.querySelector('#humidity');
-const hi = document.querySelector('#today-hi')
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.92&appid=9a3623d99a7e974b0da966d7fba6576e&units=imperial';
 
@@ -27,7 +17,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -42,7 +32,6 @@ apiFetch();
 function displayResults(data) {
     todayTemp.textContent = `${Math.round(data.main.temp)}°F`;
     humid.textContent = `${data.main.humidity}% Humidity`;
-    hi.textContent = `Today's hi will be ${Math.round(data.main.temp_max)}°F`;
 
     data.weather.forEach(weather => { 
         const iconsrc = `https://openweathermap.org/img/w/${weather.icon}.png`;
@@ -53,6 +42,9 @@ function displayResults(data) {
         title.textContent = weather.main;
         desc.textContent = weather.description;
         icon.setAttribute('src', iconsrc);
+        icon.setAttribute('alt', 'weather icon');
+        icon.setAttribute('width','50');
+        icon.setAttribute('height','50');
 
         humid.appendChild(title);
         humid.appendChild(desc);
@@ -69,7 +61,7 @@ async function apiFetchDos() {
         const response = await fetch(urlDos);
         if (response.ok) {
             const dataDos = await response.json();
-            console.log(dataDos);
+            //console.log(dataDos);
             tomorrow(dataDos);
         } else {
             throw Error(await response.text());

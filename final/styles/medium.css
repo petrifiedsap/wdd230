@@ -5,6 +5,8 @@
     .navigation {
          margin: 0;
         height: 100%;
+        border-left: 2px solid var(--darkest);
+
      }
      .navigation a {
          display: block;

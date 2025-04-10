@@ -21,29 +21,27 @@
 </head>
 <body>
    <header>
-        <div class="tempbanner">
-            <div id="today-hi"></div>
-            <button id="hibanner" title="today's hi close button"></button>
-        </div>
         <a href="index.html">
-            <img src="images/logo-pink.webp" alt="Scoots logo" loading="lazy">
+            <img src="images/logo-pink.webp" alt="Scoots logo" width="500" height="500" loading="lazy">
         </a>
         <button id="menu" title="menu button"></button>        
         <nav>
             <ul class="navigation">
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rental Information</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="https://facebook.com"><img src="images/Facebook_Logo_Primary.png" alt="facebook logo with link"></a></li>
-                <li><a href="https://instagram.com"><img src="images/Instagram_Glyph_Black.png" alt="instagram logo with link"></a></li>
-                <li><a href="https://x.com"><img src="images/x-logo-black.png" alt="X logo with link"></a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="https://facebook.com"><img src="images/Facebook_Logo_Primary.png" width="256" height="256" alt="facebook logo with link"></a></li>
+                <li><a href="https://instagram.com"><img src="images/Instagram_Glyph_Black.png" width="250" height="250" alt="instagram logo with link"></a></li>
+                <li><a href="https://x.com"><img src="images/x-logo-black.png" alt="X logo with link" width="240" height="245"></a></li>
             </ul>
+        
         </nav>
     </header>
     <main class="reservations"> 
         <div id="formmessage"></div>
         <h1>Make a Reservation</h1>
-        <form method="get" action="record.html">
+        <form method="get" action="attributions.html">
             <fieldset>
                 <legend>Personal Information</legend>
                 <label> First Name* <input type="text" name="fname" id="fname" required placeholder="Nancy"></label>
@@ -66,7 +64,8 @@
                 <label><input type="radio" name="vehicle" value="atv"> Honda Pioneer ATV </label>
                 <label><input type="radio" name="vehicle" value="jeep_4"> Jeep Wrangler 4-door </label>
                 <label><input type="radio" name="vehicle" value="jeep_2"> Jeep Wrangler 2-door </label>
-                <label> Requests/Comments <input type="text" name="comments" id="comments"></label>
+                <div> Requests/Comments </div>
+                <label><textarea name="comments" id="comments"></textarea></label>
             </fieldset>
             <div class="rentaldetails">
                 <div class="terms-title">

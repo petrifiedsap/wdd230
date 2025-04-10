@@ -4,7 +4,7 @@
 }
 :root {
     --darkest: black;
-    --darker-blue: #436389;
+    --darker-blue: #3d597b;
     --lighter-blue: #96d0ee;
     --yellow: #ffffb0;
     --pink-melon: #ffa69e; 
@@ -66,6 +66,7 @@ header {
 
 header img {
     height: clamp( 50px, 40vw, 60vw);
+    width: auto;
     margin: 0 auto;
 }
 
@@ -107,15 +108,14 @@ nav {
 	color: var(--darkest);
 	font-weight: 700;
 }
-/* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
 	display: block;
 }
-/* end of hamburger css*/
 nav a img {
     max-width: 4vw;
     height: auto;
 }
+/* end of nav */
 
 .hero {
     display: grid;
@@ -129,7 +129,7 @@ nav a img {
     width: 100%;
     height: auto;
 }
-.hero h2 {
+.hero h1 {
     grid-column: 1/3;
     grid-row: 1/2;
     background-color: var(--yellow);
@@ -150,10 +150,13 @@ nav a img {
     color: black;
     background-color: var(--yellow);
 }
-
+main h2, .reservations h1 {
+    padding-top: 2rem;
+}
 .options {
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
 }
 .choice {
     position: relative;
@@ -222,28 +225,27 @@ td img {
 }
 
 /* for reservations page */
-.reservations label, .join-main fieldset div {
+.reservations label, .reservations fieldset div, .contact label, .contact div {
     display: block;
     padding-top: 1rem;
 }
-.reservations fieldset, .rentaldetails {
+.reservations fieldset, .rentaldetails, .contactform {
     margin: 2rem;
     border: 1px solid var(--darkest);
     border-radius: 6px;
 }
-.reservations legend {
+.reservations legend, .contact legend {
     color: var(--darkest);
     padding: 0 .5rem;
 }
-.reservations input {
+.reservations input, .contact input {
     display: block;
-    background-color: #ecf0cc;
+    background-color: var(--yellow);
     border: solid 1px var(--darkest);
     border-radius: 6px;
     padding: .5rem;
     width: 80%;
     max-width: 400px;
-
 }
 .reservations input[type="radio"], .reservations input[type="checkbox"] {
     display: inline;
@@ -265,9 +267,34 @@ td img {
 .reservations h3 {
     padding-top: 1rem;
 }
-
+.reservations textarea, .contact textarea {
+    width: 100%;
+}
 .reservations ul {
     list-style:disc;
     padding-bottom: 1rem;
 }
-
+/* contact page */
+.contact h1 {
+    padding: 3rem;
+    background-color: var(--darker-blue);
+    color: white;
+    border-bottom: 2px solid var(--darkest);
+    margin-bottom: 2rem;
+}
+.contact p {
+    text-align: center;
+}
+iframe {
+    display: block;
+    margin: auto;
+    border: 0;
+    margin-bottom: 2em;
+    width: 100%;
+}
+.contact input, .contact label, .contact div {
+    margin-left: 1vw;
+}
+.contactform {
+    padding: 2rem;
+}
