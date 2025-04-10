@@ -6,7 +6,7 @@ async function getVehicles() {
         const response = await fetch(urlV);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             displayVehicles(data);
         } else {
             throw Error(await response.text());
