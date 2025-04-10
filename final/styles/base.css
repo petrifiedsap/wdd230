@@ -153,6 +153,11 @@ nav a img {
 main h2, .reservations h1 {
     padding-top: 2rem;
 }
+.about-us, .info {
+    background-color: var(--darker-blue);
+    color: white;
+    padding-bottom: 3rem;
+}
 .options {
     display: flex;
     flex-direction: column;
@@ -185,7 +190,6 @@ footer {
     flex-direction: column;
     padding: 2rem;
     border-top: 2px solid var(--darkest);
-    margin-top: 3rem;
 }
 footer p {
     padding: 0;
