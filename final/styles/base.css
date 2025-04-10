@@ -205,7 +205,15 @@ footer h3 {
 }
 
 /* for rentals page */
+#rentals {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+#rentals h1, #rentals a {
+    margin: 2rem auto;
+}
 table {
+    grid-column: 1/3;
     width: 100%;
     text-align: center;
     border: 1px solid black;
