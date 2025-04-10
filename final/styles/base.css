@@ -150,6 +150,7 @@ nav a img {
     color: black;
     background-color: var(--yellow);
 }
+
 main h2, .reservations h1 {
     padding-top: 2rem;
 }
@@ -217,6 +218,20 @@ footer h3 {
 #rentals h1, #rentals a {
     margin: 2rem auto;
 }
+#rentals h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: white;
+}
+#rentals a {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.background {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: var(--darker-blue);
+}
 table {
     grid-column: 1/3;
     width: 100%;
@@ -238,6 +253,11 @@ td img {
 }
 
 /* for reservations page */
+.reservations h1 {
+    background-color: var(--darker-blue);
+    padding-bottom: 2rem;
+    color: white;
+}
 .reservations label, .reservations fieldset div, .contact label, .contact div {
     display: block;
     padding-top: 1rem;
