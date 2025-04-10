@@ -32,6 +32,10 @@ function displayVehicles(data){
         const fullW = document.createElement('td');
 
         image.setAttribute('src', vehicle.Image);
+        image.setAttribute('alt', vehicle.vehicle);
+        image.setAttribute('width','300');
+        image.setAttribute('height','200');
+        image.setAttribute('loading','lazy');
         name.textContent = vehicle.vehicle;
         max.textContent = vehicle.MaxPersons;
         halfR.textContent = vehicle.HalfDayRes;

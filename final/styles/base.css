@@ -220,8 +220,8 @@ th {
     padding: 1rem 0;
 }
 td img {
-    width: clamp(60px, 15vw, 300px);
-    
+    width: clamp(50px, 15vw, 300px);
+    height: auto;
 }
 
 /* for reservations page */
